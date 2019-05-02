@@ -63,40 +63,52 @@
                 <span class="carousel-control-next-icon"></span>
             </a>
         </div>
-
     </div>
     
-    </head>
+</head>
     
 <body>
     
     <div class="principal">
        <div class="secao3">
 
-       </div>
-
-         <div class="logincadastro">
-           <fieldset><legend><a>Login de Usuários</a></legend><br><br>
+    </div>
+        
+        <div class="login">
+            <fieldset><legend>Faça o login para acessar o sistema Avicena</legend><br><br>
 
               <form action="usuario" method="post">
                   <input type="hidden" id="validar" name="validar" value="validar">
-                  
                   Nome  : <input type="text" name="nome" required=""> <br><br>
                   Senha : <input type="password" name="senha" required=""> <br><br>
                   <input type="submit" name="login" value="OK"/>
 
               </form><br> 
-
-                <form action="CadastrarUsuario.jsp" method="post">
+              
+              <form action="CadastrarUsuario.jsp" method="post">
                        Não sou cadastrado <input type="submit" value = "Clique aqui!">
-                </form> 
-           </fieldset>
+              </form>
+            </fieldset>
          </div>
-        </form>
-
+        
+        <%            
+            Object obj1 = request.getAttribute("usuariocadastrado");
+            //Object obj2 = request.getAttribute("usuariovalidado");
+            
+            if(obj1 != null){
+            
+            Boolean usuariocadastrado = (Boolean) obj1;
+            
+                if(usuariocadastrado){%>
+                  <input type="text" size="100" value="<% out.println("Cadastrado realizado! Você já pode fazer login para acessar o sistema Avicena.");%>">
+                <%}        
+            }%>
+        
         <div class="secao4">
 
         </div>
+        
+        
     
 <footer class="footer">                
             &copy; Desenvolvido por Luciane Benetti e Marco Sena.

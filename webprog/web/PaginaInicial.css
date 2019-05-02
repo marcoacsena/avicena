@@ -1,21 +1,22 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 11/03/2019, 13:44:50
-    Author     : 80119050
-*/
-       
-.corpo {background-color: powderblue; height: 700px}
+    
+
 
 .titulo {text-align: center}
 .navbar {height: 50px;}
 .nav-item {font-size: x-large;} 
 .nav-link {font-size: x-large; padding: 10px 10px;}
 
-.logincadastro {
+.login{
+   background-color: powderblue;
+    padding: 4px;
+    float: right;
+    width: 40%;
+    margin-right: 30%;
+    margin-left: 0%;
+    margin-top:6%; 
+}
+
+.cadastro {
     background-color: powderblue;
     padding: 4px;
     float: right;
@@ -24,7 +25,6 @@ and open the template in the editor.
     margin-left: 0%;
     margin-top:6%;
 }
-
 
 .secao4 {      
     background-color: darkslateblue;/*Cor de fundo*/    

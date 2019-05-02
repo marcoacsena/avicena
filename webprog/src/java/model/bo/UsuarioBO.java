@@ -10,19 +10,27 @@ public class UsuarioBO {
      UsuarioDAO usuarioDAO = new UsuarioDAO();
     
     public int cadastrarUsuarioVO(UsuarioVO usuarioVO) {
-        int novoId;
+        usuarioDAO.pesquisarUsuarioVO(usuarioVO);
+        int novoId = usuarioVO.getCodigoUsuario();
         
-        if(usuarioDAO.validarUsuarioVO(usuarioVO.getSenha()) != null){
+        if(novoId == 0){            
+           novoId = usuarioDAO.inserir(usuarioVO);
             
-            novoId = 0;       
-        } else{ novoId = usuarioDAO.inserir(usuarioVO);}
-        
-        return novoId;
+        } else{
+            novoId=0;
     }
-
-    public UsuarioVO validarUsuarioVO(UsuarioVO usuarioVO) {
         
-        return usuarioDAO.validarUsuarioVO (usuarioVO);
-    }
+         return novoId;
     
+        }        
+
+    public UsuarioVO pesquisarUsuarioVO(UsuarioVO usuarioVO) {
+        
+        UsuarioVO usuario = usuarioDAO.pesquisarUsuarioVO(usuarioVO);
+        if(usuario == null){
+            return null;
+            } else {return usuario;}
+     }
+
+       
 }

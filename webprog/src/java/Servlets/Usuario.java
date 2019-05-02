@@ -32,14 +32,13 @@ public class Usuario extends HttpServlet {
         UsuarioController usuarioController;
         UsuarioVO usuarioVO;           
        
-        //String cpf = request.getParameter("cpfpaciente");
+//        System.out.println("O nome é: " + nome);
+//        System.out.println("a senha é: " + senha);
 
-        //System.out.println("O cpf é: " + cpf);
-
-        ArrayList<String> variaveis = new ArrayList<String>();
+        ArrayList<String> variaveis = new ArrayList<>();
         variaveis.add(var1);
         variaveis.add(var2);
-        System.out.println("O array é: " + variaveis);       
+        //System.out.println("O array é: " + variaveis);       
 
         for (int i = 0; i < variaveis.size(); i++) {
             String variavelDeControle = variaveis.get(i);
@@ -48,42 +47,49 @@ public class Usuario extends HttpServlet {
                 switch (variavelDeControle) {
                     case "cadastrar":
 
-                        System.out.println("A variável é: " + variaveis.get(i));
+                        //System.out.println("A variável é: " + variaveis.get(i));
                         usuarioVO = new UsuarioVO();
-                        usuarioVO.setLogin(request.getParameter(nome));
-                        usuarioVO.setSenha(request.getParameter(senha));
+                        usuarioVO.setLogin(nome);
+                        usuarioVO.setSenha(senha);
                         
                         System.out.println(usuarioVO);
-
                         usuarioController = new UsuarioController();
-
+                        
                         int novoId = usuarioController.cadastrarUsuarioVO(usuarioVO);
+                        System.out.println("O novo Id é: " +novoId);
+                        
+                        if (novoId > 0) {
+                            Boolean usuariocadastrado = true;
+                            request.setAttribute("codigodousuario", usuarioVO.getCodigoUsuario());
+                            request.setAttribute("nome", usuarioVO.getLogin());
+                            request.setAttribute("senha", usuarioVO.getSenha());                            
 
-//                        if (novoId > 0) {
-//
-//                            request.setAttribute("codigodousuario", novoId);
-//                            request.setAttribute("nomepaciente", usuarioVO.getLogin());
-//                            request.setAttribute("senha", usuarioVO.getSenha());
-//                            
-//
-//                            request.getRequestDispatcher("MostrarPacienteCadastrado.jsp").forward(request, response);
-//                        }
+                            request.getRequestDispatcher("Index.jsp").forward(request, response);
+                        } else{
+                            Boolean usuariocadastrado = false; 
+                            
+                            request.setAttribute("usuariocadastrado", usuariocadastrado);
+                            request.getRequestDispatcher("CadastrarUsuario.jsp").forward(request, response);}
                         break;
 
                     case "validar":
                        
                         usuarioVO = new UsuarioVO();
-                        usuarioVO.setLogin(request.getParameter(nome));  
+                        usuarioVO.setLogin(nome);  
                         usuarioVO.setSenha(senha);
 
                         usuarioController = new UsuarioController();
-                        UsuarioVO validacaoDeUsuario = usuarioController.validarUusarioVO(usuarioVO);
-                        if (validacaoDeUsuario != null) {
+                        System.out.println("A variável é: " + variaveis.get(i));
+                        UsuarioVO usuarioValidado = usuarioController.pesquisarUsuarioVO(usuarioVO);
+                        if (usuarioValidado != null) {
 
                             request.setAttribute("login", usuarioVO.getLogin());
                             request.setAttribute("senha",usuarioVO.getSenha());
                             request.getRequestDispatcher("WEB-INF/PaginaInicial.jsp").forward(request, response);
-                        }
+                        } else {
+                            Boolean usuariovalidado = false;                            
+                            request.setAttribute("usuariovalidado", usuariovalidado);                            
+                            request.getRequestDispatcher("CadastrarUsuario.jsp").forward(request, response);}
 
                         break;
 
@@ -93,28 +99,10 @@ public class Usuario extends HttpServlet {
 
                 }
             }
+        }           
+ 
         }
             
-            
-            
-        
-//            if (user.equals("marcosena") && password.equals("1")) {
-//                request.getSession().setAttribute("usuario", user);
-//                response.sendRedirect("areadacomunidadejava");
-//            } else {
-//                response.sendRedirect("Autenticar.jsp");
-//            }
-
-
-        }
-            
-
-//                HttpSession session = request.getSession();
-//                session.setAttribute("user", login);
-//                session.setMaxInactiveInterval(20);
-//                request.getRequestDispatcher("WEB-INF/censoDemograficoAutenticado.jsp").forward(request, response);
-//            
-//        request.getRequestDispatcher("cadastrarUsuarios.jsp").forward(request, response);
 
     private String MD5(String senha) {
         

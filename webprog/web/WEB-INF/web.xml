@@ -20,6 +20,10 @@
         <servlet-name>Usuario</servlet-name>
         <servlet-class>Servlets.Usuario</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SairdoSistema</servlet-name>
+        <servlet-class>Servlets.SairdoSistema</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Crud</servlet-name>
         <url-pattern>/crud</url-pattern>
@@ -42,6 +46,10 @@
     <servlet-mapping>
         <servlet-name>Usuario</servlet-name>
         <url-pattern>/usuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SairdoSistema</servlet-name>
+        <url-pattern>/sairdosistema</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
