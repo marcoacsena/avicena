@@ -1,6 +1,5 @@
     
-
-
+.principal{width: 100%}
 .titulo {text-align: center}
 .navbar {height: 50px;}
 .nav-item {font-size: x-large;} 
@@ -8,12 +7,12 @@
 
 .login{
    background-color: powderblue;
-    padding: 4px;
-    float: right;
-    width: 40%;
-    margin-right: 30%;
-    margin-left: 0%;
-    margin-top:6%; 
+   padding: 4px;
+   float: right;
+   width: 60%;
+   margin-right: 20%;
+   margin-left: 10%;
+   margin-top:6%; 
 }
 
 .cadastro {

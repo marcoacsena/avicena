@@ -13,12 +13,12 @@
     <link type="text/css" rel="stylesheet" href="PaginaInicial.css">
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">  
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
       
-    <title>Sistema AVICENA - Página Inicial</title>
+    <title>Sistema Avicena - Página Inicial</title>
     
     <style>
         /* Make the image fully responsive */  
@@ -72,10 +72,10 @@
     <div class="principal">
        <div class="secao3">
 
-    </div>
+       </div>
         
         <div class="login">
-            <fieldset><legend>Faça o login para acessar o sistema Avicena</legend><br><br>
+            <fieldset><legend>Faça o login para acessar o sistema Avicena - especialidades médicas</legend><br><br>
 
               <form action="usuario" method="post">
                   <input type="hidden" id="validar" name="validar" value="validar">
@@ -89,7 +89,7 @@
                        Não sou cadastrado <input type="submit" value = "Clique aqui!">
               </form>
             </fieldset>
-         </div>
+        </div>
         
         <%            
             Object obj1 = request.getAttribute("usuariocadastrado");
@@ -110,9 +110,9 @@
         
         
     
-<footer class="footer">                
+        <footer class="footer">                
             &copy; Desenvolvido por Luciane Benetti e Marco Sena.
-</footer>
-    
+        </footer>
+    </div>    
 </body>
 </html>

@@ -72,6 +72,6 @@
 <footer class="footer">                
             &copy; Desenvolvido por Luciane Benetti e Marco Sena.
 </footer>
-        
+   </div>        
 </body>
 </html>

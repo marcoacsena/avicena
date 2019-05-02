@@ -132,9 +132,15 @@
                             <a class="dropdown-item" href="#">Responsáveis Técnicos</a>
                             <a class="dropdown-item" href="#">Informações do Sistema</a>
                             <a class="dropdown-item" href="#">Contatos</a>
-                            <a class="dropdown-item" href="<% request.logout();%>">Sair</a>
-
+                           
                         </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="sairdosistema" style="color: white; padding: 10px; 
+                           margin-bottom: 0px; ">
+                            Sair
+                        </a>
+                        
                     </li>
                 </ul>
             </div>

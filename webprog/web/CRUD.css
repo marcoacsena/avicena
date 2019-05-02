@@ -68,7 +68,7 @@ td,th {
     tr:nth-child(odd){background-color: burlywood;}
     
     
-.footer {width: 100%; background-color:cadetblue; text-align: center; padding: 6px; margin-top: 200px; 
+.footer {width: 100%; background-color: lightblue; text-align: center; padding: 6px; margin-top: 200px; 
         margin-left: 0%; bottom: 0px;}
 
 
