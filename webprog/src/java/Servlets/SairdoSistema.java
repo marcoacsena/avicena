@@ -19,9 +19,8 @@ public class SairdoSistema extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         
-        request.getSession().invalidate();
-        
-        request.getRequestDispatcher("index.jsp").forward(request, response);
+        request.getSession().invalidate();        
+        request.getRequestDispatcher("Index.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

@@ -10,17 +10,13 @@ public class UsuarioBO {
      UsuarioDAO usuarioDAO = new UsuarioDAO();
     
     public int cadastrarUsuarioVO(UsuarioVO usuarioVO) {
-        usuarioDAO.pesquisarUsuarioVO(usuarioVO);
-        int novoId = usuarioVO.getCodigoUsuario();
+        UsuarioVO usuario = usuarioDAO.pesquisarUsuarioVO(usuarioVO);
+        int novoId = 0;
         
-        if(novoId == 0){            
-           novoId = usuarioDAO.inserir(usuarioVO);
+        if(usuario == null){            
+           return novoId = usuarioDAO.inserir(usuarioVO);
             
-        } else{
-            novoId=0;
-    }
-        
-         return novoId;
+        } else{return novoId; }         
     
         }        
 
