@@ -16,7 +16,6 @@
 <body>
    <div class="principal">
      <div class="secao3">
-
      </div>
 
          <div class="cadastro">
@@ -29,15 +28,12 @@
                   <input type="submit" value="Cadastrar"/>
 
               </form><br> 
-
-             <form action="sairdosistema" method="post">
+              <form action="sairdosistema" method="post">
                 <input type="submit" value = "sair">
-             </form> 
+              </form> 
            </fieldset>
-         </div>
-        
-        
-              
+         </div>     
+                      
 <%            
             Object obj1 = request.getAttribute("usuariocadastrado");
             Object obj2 = request.getAttribute("usuariovalidado");
@@ -47,9 +43,10 @@
             Boolean usuariocadastrado = (Boolean) obj1;
             
                 if(!usuariocadastrado){%>
-                <hr>
-                <input type="text" size="100" value="<% out.println("Não Foi possível cadastrar o novo Usuário. Tente novamente!");%>">
-                <hr>
+               
+                <input type="text" size="100" value="<% out.println("Não foi possível cadastrar"
+                        + " o novo Usuário, pois já existe um cadastro com esse nome. Tente novamente!");%>">
+                
                 <%}        
             }
                
