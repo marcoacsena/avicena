@@ -34,29 +34,24 @@
         </div>
         
         <div id="resultadoCPF">
-            
             <h2>Resultado da pesquisa de Paciente por CPF:</h2>
-            <form action="atualizarpaciente" method="post">
-
-                <fieldset><legend>Dados do Paciente</legend>
-                    
-                    Identificação: <input type="text" name="codigopaciente" value="<%= request.getAttribute("codigopaciente")%>"><br><br>
-                    Nome: <input type="text" name="nomepaciente" value="<%= request.getAttribute("nomepaciente")%>"><br><br>            
-                    Celular: <input name="celmenpaciente" type="text" value="<%= request.getAttribute("celmenpaciente")%>"><br><br>
-                    CPF: <input type="text" name="cpfpaciente" value="<%= request.getAttribute("cpfpaciente")%>"><br><br>
-                    
-                    <input type="submit" value="Atualizar Dados do Paciente">
-                </fieldset>
-            </form><br><br>
             
-            <% 
-                String resultadoDaAtualizacao = (String) request.getAttribute("atualizacao");                
-               
-                %>                
-                <input type="text" value="<%= resultadoDaAtualizacao%>" size="100"><br><br>
-                     
-            <form action="PaginaInicial.jsp" method="POST">
-                <input type="submit" value="Retornar para a Página Principal do SISTEMA AVICENA"><br><br>
+            <%            
+                Object obj = request.getAttribute("pacientevoretornado");
+            
+            if(obj != null){
+              Boolean PacienteVORetornado = (Boolean) obj;       
+                        
+                if(!PacienteVORetornado){%>                     
+                <input type="text" size="100" style="margin-left: 5px;" value="<% out.println("Paciente não encontrado!"
+                        + " Tente novamente. Se o Paciente não for cadastrado, por gentileza, cadastrá-lo!!");%>">               
+                <%}
+                
+            }%>    
+            
+                
+            <form action="Idex.jsp" method="POST">
+                <input type="submit" value="Retornar para a Página Principal do sistema Avicena"><br><br>
             </form>            
             
         </div>

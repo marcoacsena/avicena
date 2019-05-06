@@ -144,8 +144,16 @@ public class PacienteVO {
 
     @Override
     public String toString() {
-        return "PacienteVO{" + "codigoPaciente=" + codigoPaciente + ", nomePaciente=" + nomePaciente 
-                + ", celMensagemPaciente=" + celMensagemPaciente + ", cpfPaciente=" + cpfPaciente + '}';
-    }   
+        return "PacienteVO{" + "codigoPaciente=" + codigoPaciente + ", nomePaciente=" 
+                + nomePaciente + ", celMensagemPaciente=" + celMensagemPaciente 
+                + ", foneResidencial=" + foneResidencial + ", foneComercial=" 
+                + foneComercial + ", emailPaciente=" + emailPaciente + ", cpfPaciente=" 
+                + cpfPaciente + ", cnpjPaciente=" + cnpjPaciente + ", logradouro=" 
+                + logradouro + ", numLogradouro=" + numLogradouro + ", complemento=" 
+                + complemento + ", bairro=" + bairro + ", cidade=" + cidade + ", uf=" 
+                + uf + ", cep=" + cep + '}';
+    }    
+    
+     
     
 }

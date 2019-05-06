@@ -18,7 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
       
-    <title>Sistema Avicena - Página Inicial</title>
+    <title>Sistema Avicena - Página de Login</title>
     
     <style>
         /* Make the image fully responsive */  
@@ -63,53 +63,50 @@
                 <span class="carousel-control-next-icon"></span>
             </a>
         </div>
-    </div>
-    
-</head>
-    
-<body>
-    
+    </div>    
+</head>    
+<body>    
     <div class="principal">
        <div class="secao3">
 
        </div>
         
         <div class="login">
+        <form action="usuario" method="post">
             <fieldset><legend>Faça o login para acessar o sistema Avicena - especialidades médicas</legend><br><br>
-
-              <form action="usuario" method="post">
+                              
                   <input type="hidden" id="validar" name="validar" value="validar">
-                  Nome  : <input type="text" name="nome" required=""> <br><br>
-                  Senha : <input type="password" name="senha" required=""> <br><br>
-                  <input type="submit" name="login" value="OK"/>
+                  Nome: 
+                  <input type="text" name="nome" required=""><br><br>
+                  Senha: 
+                  <input type="password" name="senha" required=""><br><br>
+                  <input type="submit" value="OK"/>
 
               </form><br> 
               
               <form action="CadastrarUsuario.jsp" method="post">
                        Não sou cadastrado <input type="submit" value = "Clique aqui!">
-              </form>
-            </fieldset>
+             </fieldset>  
+        </form> 
         </div>
         
         <%            
-            Object obj1 = request.getAttribute("usuariocadastrado");
-            //Object obj2 = request.getAttribute("usuariovalidado");
+            Object obj1 = request.getAttribute("usuariovalidado");
             
             if(obj1 != null){
-            
-            Boolean usuariocadastrado = (Boolean) obj1;
-            
-                if(usuariocadastrado){%>
-                  <input type="text" size="100" value="<% out.println("Cadastrado realizado! Você já pode fazer login para acessar o sistema Avicena.");%>">
-                <%}        
-            }%>
+                Boolean usuarioValidado = (Boolean) obj1;            
+                        
+                if(!usuarioValidado){%>
+                     
+                <input type="text" size="80" style="margin-left: 300px;"st value="<% out.println("Nome ou senha incorretos!"
+                          + " Tente novamente. Se não for cadastrado, cadastra-se!");%>">
+                <%}    
+             }%>
         
         <div class="secao4">
 
-        </div>
-        
-        
-    
+        </div>   
+            
         <footer class="footer">                
             &copy; Desenvolvido por Luciane Benetti e Marco Sena.
         </footer>

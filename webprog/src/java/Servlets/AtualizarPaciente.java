@@ -17,13 +17,20 @@ PacienteVO pacienteVO = new PacienteVO();
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {       
         
-        pacienteVO.setCodigoPaciente(Integer.parseInt(request.getParameter("codigopaciente")));
         pacienteVO.setNomePaciente(request.getParameter("nomepaciente"));
         pacienteVO.setCelMensagemPaciente(request.getParameter("celmenpaciente"));
-        pacienteVO.setCpfPaciente(request.getParameter("cpfpaciente")); 
-        
-        
-                              
+        pacienteVO.setFoneResidencial(request.getParameter("foneresidencial")); 
+        pacienteVO.setFoneComercial(request.getParameter("fonecomercial"));
+        pacienteVO.setEmailPaciente(request.getParameter("email"));
+        pacienteVO.setCpfPaciente(request.getParameter("cpfpaciente"));
+        pacienteVO.setCnpjPaciente(request.getParameter("cnpjpaciente"));
+        pacienteVO.setLogradouro(request.getParameter("logradouro"));
+        pacienteVO.setNumLogradouro(request.getParameter("numlogradouro"));
+        pacienteVO.setBairro(request.getParameter("bairro")); 
+        pacienteVO.setCidade(request.getParameter("cidade"));
+        pacienteVO.setCep(request.getParameter("uf"));
+        pacienteVO.setUf(request.getParameter("cep"));
+                                      
             PacienteController pacientecontroller = new PacienteController();
             boolean atualizado = pacientecontroller.atualizarPacienteVO(pacienteVO);
             

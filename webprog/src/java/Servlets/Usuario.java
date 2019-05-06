@@ -15,10 +15,6 @@ import javax.servlet.http.HttpServletResponse;
 import model.vo.UsuarioVO;
 import sun.misc.BASE64Encoder;
 
-/**
- *
- * @author 80119050
- */
 public class Usuario extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -46,7 +42,6 @@ public class Usuario extends HttpServlet {
             if (variavelDeControle != null) {
                 switch (variavelDeControle) {
                     case "cadastrar":
-
                         //System.out.println("A variável é: " + variaveis.get(i));
                         usuarioVO = new UsuarioVO();
                         usuarioVO.setLogin(nome);
@@ -58,16 +53,15 @@ public class Usuario extends HttpServlet {
                         int novoId = usuarioController.cadastrarUsuarioVO(usuarioVO);
                         System.out.println("O novo Id é: " +novoId);
                         
+                        
                         if (novoId > 0) {
-                            Boolean usuariocadastrado = true;
+                           
                             request.setAttribute("codigodousuario", usuarioVO.getCodigoUsuario());
                             request.setAttribute("nome", usuarioVO.getLogin());
-                            request.setAttribute("senha", usuarioVO.getSenha());                            
-
+                            request.setAttribute("senha", usuarioVO.getSenha());                 
                             request.getRequestDispatcher("Index.jsp").forward(request, response);
                         } else{
                             Boolean usuariocadastrado = false; 
-                            
                             request.setAttribute("usuariocadastrado", usuariocadastrado);
                             request.getRequestDispatcher("CadastrarUsuario.jsp").forward(request, response);}
                         break;
@@ -79,17 +73,17 @@ public class Usuario extends HttpServlet {
                         usuarioVO.setSenha(senha);
 
                         usuarioController = new UsuarioController();
-                        System.out.println("A variável é: " + variaveis.get(i));
+                        //System.out.println("A variável é: " + variaveis.get(i));
                         UsuarioVO usuarioValidado = usuarioController.pesquisarUsuarioVO(usuarioVO);
                         if (usuarioValidado != null) {
-
                             request.setAttribute("login", usuarioVO.getLogin());
                             request.setAttribute("senha",usuarioVO.getSenha());
                             request.getRequestDispatcher("WEB-INF/PaginaInicial.jsp").forward(request, response);
                         } else {
-                            Boolean usuariovalidado = false;                            
-                            request.setAttribute("usuariovalidado", usuariovalidado);                            
-                            request.getRequestDispatcher("CadastrarUsuario.jsp").forward(request, response);}
+                            Boolean validacao = false;                            
+                            request.setAttribute("usuariovalidado", validacao);                            
+                            request.getRequestDispatcher("Index.jsp").forward(request, response);
+                        }
 
                         break;
 

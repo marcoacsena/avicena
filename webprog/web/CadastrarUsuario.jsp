@@ -19,15 +19,16 @@
      </div>
 
          <div class="cadastro">
-           <fieldset><legend>Insira os Dados, a seguir, para cadastrar novo Usuário</legend><br><br>
-
-              <form action="usuario" method="post">
+           <form action="usuario" method="post">
+               <fieldset><legend>Insira os Dados, a seguir, para cadastrar novo Usuário</legend><br><br>
                   <input type="hidden" id="cadastrar" name="cadastrar" value="cadastrar">
-                  Nome  : <input type="text" name="nome" required=""> <br><br>
-                  Senha : <input type="password" name="senha" required=""> <br><br>
+                  Nome: 
+                  <input type="text" name="nome" required=""><br><br>
+                  Senha: 
+                  <input type="password" name="senha" required=""><br><br>
                   <input type="submit" value="Cadastrar"/>
 
-              </form><br> 
+           </form><br><br> 
               <form action="sairdosistema" method="post">
                 <input type="submit" value = "sair">
               </form> 
@@ -38,8 +39,7 @@
             Object obj1 = request.getAttribute("usuariocadastrado");
             Object obj2 = request.getAttribute("usuariovalidado");
             
-            if(obj1 != null){
-            
+            if(obj1 != null){            
             Boolean usuariocadastrado = (Boolean) obj1;
             
                 if(!usuariocadastrado){%>

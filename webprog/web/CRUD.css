@@ -1,15 +1,14 @@
 .body {    
-	background-color:lightblue;
-        width: 100%;
-        padding: 0px;
+    background-color:lightblue;
+    width: 100%;
+    padding: 0px;
 }
 
 a{
-	color: red;
+    color: red;
 }
 
-#form1 {
-    
+#form1 {    
     background-color: lightblue; 
     padding: 5px;
     margin-top: 0px;/*Margen superior com 1 pixel*/
@@ -19,34 +18,32 @@ a{
     height: 700px; /*Altura de 500 pixels*/   
 }
 
-#form2 {   
-    
+#form2 {  
     background-color: lightblue; 
     padding: 5px;
     margin-top: 0px;/*Margen superior com 1 pixel*/
     margin-right: -1px;
     float: left;/*propriedade indicando que a Área flutuará a esquerda*/
     width: 50%; /*Ocupando 24% da largura total destinada para o corpo*/
-    height: 700px; /*Altura de 500 pixels*/
-    
+    height: 700px; /*Altura de 500 pixels*/    
 }
 
 #consultaCPF {
     background-color: lightblue; 
-    padding: 6px;
+    padding: 0px;
     margin-top: 0px;/*Margen superior com 1 pixel*/
     margin-right: 0px;
     float: left;/*propriedade indicando que a Área flutuará a esquerda*/
-    width: 30.1%; /*Ocupando 24% da largura total destinada para o corpo*/
+    width: 29.1%; /*Ocupando 24% da largura total destinada para o corpo*/
     height: 700px; /*Altura de 500 pixels*/
 }
 #resultadoCPF {
     background-color: lightblue;/*Cor de fundo*/    
-    padding: 5px;/*Margen interna de 3 pixels*/
+    padding: 0px;/*Margen interna de 3 pixels*/
     float: right;/*propriedade indicando que a Área flutuará a direita*/
     margin-top: 0px;/*Margen superior com 1 pixel*/
     margin-left: -1px;
-    width: 68.4%;/*Ocupando 74% da largura total destinada para o corpo*/
+    width: 70%;/*Ocupando 74% da largura total destinada para o corpo*/
     height: 700px;/*Altura de 494 pixels*/
 }
 
@@ -68,7 +65,7 @@ td,th {
     tr:nth-child(odd){background-color: burlywood;}
     
     
-.footer {width: 100%; background-color: lightblue; text-align: center; padding: 6px; margin-top: 200px; 
+.footer {float: left; width: 100%; background-color:cadetblue; text-align: center; padding: 2px; margin-top: 200px; 
         margin-left: 0%; bottom: 0px;}
 
 

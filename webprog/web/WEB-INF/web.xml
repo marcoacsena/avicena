@@ -39,10 +39,7 @@
     <servlet-mapping>
         <servlet-name>ListarPacientes</servlet-name>
         <url-pattern>/listarpacientes</url-pattern>
-    </servlet-mapping>
-    <welcome-file-list>
-        <welcome-file>Index.jsp</welcome-file>
-    </welcome-file-list>
+    </servlet-mapping>    
     <servlet-mapping>
         <servlet-name>Usuario</servlet-name>
         <url-pattern>/usuario</url-pattern>
@@ -51,6 +48,9 @@
         <servlet-name>SairdoSistema</servlet-name>
         <url-pattern>/sairdosistema</url-pattern>
     </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>Index.jsp</welcome-file>
+    </welcome-file-list>
     <session-config>
         <session-timeout>
             30

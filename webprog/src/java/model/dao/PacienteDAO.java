@@ -140,10 +140,9 @@ public boolean atualizarPacienteVO(PacienteVO pacienteVO) {
                             pacienteVO.setBairro(resultado.getString("bairro"));
                             pacienteVO.setCidade(resultado.getString("cidade"));
                             pacienteVO.setUf(resultado.getString("uf"));
-                            pacienteVO.setCep(resultado.getString("cep"));
-				
+                            pacienteVO.setCep(resultado.getString("cep"));				
 
-				paciente.add(pacienteVO);
+			paciente.add(pacienteVO);
 			}				
 			
 			
@@ -165,15 +164,26 @@ public boolean atualizarPacienteVO(PacienteVO pacienteVO) {
 
 		try {
 			prepStmt.setString(1, cpfPaciente);
-			ResultSet result = prepStmt.executeQuery();
+			ResultSet resultado = prepStmt.executeQuery();
 
-			while (result.next()){
+			while (resultado.next()){
 				pacienteVO = new PacienteVO();
 				
-				pacienteVO.setCodigoPaciente(result.getInt("codigoPaciente"));
-				pacienteVO.setNomePaciente(result.getString("nomePaciente"));	
-				pacienteVO.setCelMensagemPaciente(result.getString("celMensagemPaciente"));
-                                pacienteVO.setCpfPaciente(result.getString("cpfPaciente"));
+			    pacienteVO.setCodigoPaciente(resultado.getInt("codigoPaciente"));
+			    pacienteVO.setNomePaciente(resultado.getString("nomePaciente"));	
+			    pacienteVO.setCelMensagemPaciente(resultado.getString("celMensagemPaciente"));
+                            pacienteVO.setFoneResidencial(resultado.getString("foneResidencial"));
+                            pacienteVO.setFoneComercial(resultado.getString("foneComercial"));
+                            pacienteVO.setEmailPaciente(resultado.getString("emailPaciente"));
+                            pacienteVO.setCpfPaciente(resultado.getString("cpfPaciente"));
+                            pacienteVO.setCnpjPaciente(resultado.getString("cnpjPaciente"));
+                            pacienteVO.setLogradouro(resultado.getString("logradouro"));
+                            pacienteVO.setNumLogradouro(resultado.getString("numeroLogradouro"));
+                            pacienteVO.setComplemento(resultado.getString("complemento"));
+                            pacienteVO.setBairro(resultado.getString("bairro"));
+                            pacienteVO.setCidade(resultado.getString("cidade"));
+                            pacienteVO.setUf(resultado.getString("uf"));
+                            pacienteVO.setCep(resultado.getString("cep"));
 				
 			}			
 
