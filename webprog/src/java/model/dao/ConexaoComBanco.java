@@ -27,7 +27,7 @@ public class ConexaoComBanco {
     private static final String NOME_ESQUEMA = "avimed";
     private static final String URL_CONEXAO = "jdbc:mysql://localhost:3306/" + NOME_ESQUEMA;
     private static final String USUARIO = "root";
-    private static final String SENHA = "123";
+    private static final String SENHA = "";
     
 	public static Connection getConnection() {   
             

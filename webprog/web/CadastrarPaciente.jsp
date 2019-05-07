@@ -9,6 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <script type="text/javascript" src="mascaras.js"></script>
         <link type="text/css" rel="stylesheet" href="CRUD.css">
         <title>Cadastrar Paciente</title>
     </head>
@@ -25,7 +26,7 @@
                     Nome<a>*</a>: <input type="text" name="nomepaciente" required size="80"><br><br>
                     Celular<a>*</a>: <input type="text" name="celularpaciente" required size="10"> Fone Residencial: <input type="text" name="foneresidencial" size="10"> Fone Comercial: <input type="text" name="fonecomercial" size="10"><br><br>
                     e-mail: <input type="email" name="email" size="80"><br><br>
-                    CPF<a>*</a>: <input type="text" name="cpfpaciente" required> CNPJ: <input type="text" name="cnpjpaciente"><br><br>
+                    CPF<a>*</a>: <input type="text" name="cpfpaciente" required onkeyup="maskIt(this,event,'###.###.###-##')"> CNPJ: <input type="text" name="cnpjpaciente"><br><br>
                     
                 </fieldset>
 
