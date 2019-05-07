@@ -29,11 +29,13 @@
 
                 </fieldset>
             </form>
-            <br><br>  
+            <br><br>
+            
+            <input type="button" value = "Retornar para a página principal do sistema Avicena" onclick= "history.go(-1)">
             
         </div>
         
-        <div id="resultadoCPF">
+        <div id="resultadodaconsultaCPF">
             <h2>Resultado da pesquisa de Paciente por CPF:</h2>
             
             <%            
@@ -52,27 +54,22 @@
                     <fieldset><legend>Dados do Paciente</legend>
                                                 
                         Nome: <input type="text" name="nomepaciente" value="<%= request.getAttribute("nomepaciente")%>"><br><br>            
-                        Celular: <input type="text" name="celularpaciente" required size="10"> Fone Residencial: <input type="text" name="foneresidencial" size="10"> Fone Comercial: <input type="text" name="fonecomercial" size="10"><br><br>
-                        e-mail: <input type="email" name="email" size="80"><br><br>
-                        CPF: <input type="text" name="cpfpaciente" required> CNPJ: <input type="text" name="cnpjpaciente"><br><br>
-                        Rua: <input type="text" name="logradouro" required size="80"> Num: <input type="text" name="numlogradouro" required size="3"><br><br>
-                        Complemento: <input type="text" name="complemento" size="80"><br><br>
-                        Bairro<input type="text" name="bairro" required> Cidade: <input type="text" name="cidade" required> UF: <input type="text" name="uf" required><br><br>
-                        CEP: <input type="text" name="cep"> 
+                        Celular: <input type="text" name="celularpaciente" value="<%= request.getAttribute("celmenpaciente")%>" required size="10"> Fone Residencial: <input type="text" name="foneresidencial" value="<%= request.getAttribute("foneresidencial")%>"size="10"> Fone Comercial: <input type="text" name="fonecomercial" value="<%= request.getAttribute("fonecomercial")%>"size="10"><br><br>
+                        e-mail: <input type="email" name="email" value="<%= request.getAttribute("email")%>" size="80"><br><br>
+                        CPF: <input type="text" name="cpfpaciente" value="<%= request.getAttribute("cpfpaciente")%>" required> CNPJ: <input type="text" name="cnpjpaciente" value="<%= request.getAttribute("cnpjpaciente")%>"><br><br>
+                        Rua: <input type="text" name="logradouro" value="<%= request.getAttribute("logradouro")%>"required size="80"> Num: <input type="text" name="numlogradouro" value="<%= request.getAttribute("numlogradouro")%>" required size="3"><br><br>
+                        Complemento: <input type="text" name="complemento" value="<%= request.getAttribute("complemento")%>" size="80"><br><br>
+                        Bairro<input type="text" name="bairro" value="<%= request.getAttribute("bairro")%>" required> Cidade: <input type="text" name="cidade" value="<%= request.getAttribute("cidade")%>" required> UF: <input type="text" name="uf" value="<%= request.getAttribute("uf")%>"required><br><br>
+                        CEP: <input type="text" name="cep" value="<%= request.getAttribute("cep")%>"> 
                             <br><br> 
                         <input type="submit" value="Atualizar Dados do Paciente">
                     </fieldset>
                 </form><br><br>
                     <%}                
-            }%>    
+            }%>          
+                   
+        </div>            
             
-                
-            <form action="Idex.jsp" method="POST">
-                <input type="submit" value="Retornar para a Página Principal do sistema Avicena"><br><br>
-            </form>            
-            
-        </div>
-
         <footer class="footer">                
             &copy; Desenvolvido por Luciane Benetti e Marco Sena.
         </footer>

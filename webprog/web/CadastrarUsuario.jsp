@@ -1,9 +1,3 @@
-<%-- 
-    Document   : CadastrarUsuario
-    Created on : 30/04/2019, 09:40:45
-    Author     : 80119050
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -28,7 +22,8 @@
                   <input type="password" name="senha" required=""><br><br>
                   <input type="submit" value="Cadastrar"/>
 
-           </form><br><br> 
+           </form><br><br>
+           
               <form action="sairdosistema" method="post">
                 <input type="submit" value = "sair">
               </form> 

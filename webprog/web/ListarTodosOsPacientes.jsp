@@ -12,7 +12,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link type="text/css" rel="stylesheet" href="CRUD.css">
-        <title>Todos os Pacientes da AVICENA</title>
+        <title>Todos os Pacientes da Clínica Avicena</title>
     </head>
     <body class="body">
              

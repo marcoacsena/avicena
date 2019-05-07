@@ -24,7 +24,7 @@ a{
     margin-top: 0px;/*Margen superior com 1 pixel*/
     margin-right: -1px;
     float: left;/*propriedade indicando que a Área flutuará a esquerda*/
-    width: 50%; /*Ocupando 24% da largura total destinada para o corpo*/
+    width: 54%; /*Ocupando 24% da largura total destinada para o corpo*/
     height: 700px; /*Altura de 500 pixels*/    
 }
 
@@ -37,14 +37,26 @@ a{
     width: 29.1%; /*Ocupando 24% da largura total destinada para o corpo*/
     height: 700px; /*Altura de 500 pixels*/
 }
-#resultadoCPF {
+#resultadodaconsultaCPF {
     background-color: lightblue;/*Cor de fundo*/    
     padding: 0px;/*Margen interna de 3 pixels*/
-    float: right;/*propriedade indicando que a Área flutuará a direita*/
     margin-top: 0px;/*Margen superior com 1 pixel*/
-    margin-left: -1px;
+    margin-right: 8%;
+    float: right;/*propriedade indicando que a Área flutuará a direita*/
+    margin-left: 1%;
     width: 60%;/*Ocupando 74% da largura total destinada para o corpo*/
     height: 700px;/*Altura de 494 pixels*/
+}
+#resultadodaatualizacao{
+    background-color: lightblue;/*Cor de fundo*/    
+    padding: 0px;/*Margen interna de 3 pixels*/
+    margin-top: 0px;/*Margen superior com 1 pixel*/
+    margin-bottom: 300px;
+    margin-right: 8%;    
+    margin-left: 1%;
+    width: 60%;/*Ocupando 74% da largura total destinada para o corpo*/
+    height: 700px;/*Altura de 494 pixels*/   
+    
 }
 
 #excluirCPF {

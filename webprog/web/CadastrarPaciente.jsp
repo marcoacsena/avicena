@@ -30,7 +30,7 @@
                 </fieldset>
 
                 <br><br>
-                <input type="button" value = "Retornar para a Página Principal do SISTEMA AVICENA" onclick="history.go(-1)">
+                <input type="button" value = "Retornar para a Página Principal do sistema Avicena" onclick="history.go(-1)">
                 <br>
                 </div>
 
@@ -42,18 +42,39 @@
                         Complemento: <input type="text" name="complemento" size="80"><br><br>
                         Bairro<a>*</a>: <input type="text" name="bairro" required> Cidade<a>*</a>: <input type="text" name="cidade" required> UF: <select style="width:150px;" name="uf" required><option selected disabled>Selecione um estado</option>
                             <option>AC</option>
-                            <option>AM</option>
+                            <option>AL</option>
                             <option>AP</option>
-                        
-                            
+                            <option>AM</option>
+                            <option>BA</option>
+                            <option>CE</option>
+                            <option>DF</option>
+                            <option>ES</option>
+                            <option>GO</option>
+                            <option>MA</option>
+                            <option>MG</option>
+                            <option>MS</option>
+                            <option>MT</option>
+                            <option>PA</option>
+                            <option>PB</option>
+                            <option>PI</option>
+                            <option>PE</option>
+                            <option>PR</option>
+                            <option>RJ</option>
+                            <option>RN</option>
+                            <option>RS</option>
+                            <option>RO</option>
+                            <option>RR</option
+                            <option>SC</option>
+                            <option>SE</option>
+                            <option>SP</option>
+                            <option>TO</option>
+                            >                      
                         </select><br><br>
                         CEP: <input type="text" name="cep"> 
                             <br><br>                        
                         
                         <input type="reset" value="Limpar Campos">
-                        <input type="submit" value = "Cadastrar Paciente">                
-
-
+                        <input type="submit" value = "Cadastrar Paciente">              
                     </fieldset>
                 </div>
             </form>
