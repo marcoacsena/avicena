@@ -63,12 +63,11 @@
                             <option>RN</option>
                             <option>RS</option>
                             <option>RO</option>
-                            <option>RR</option
+                            <option>RR</option>
                             <option>SC</option>
                             <option>SE</option>
                             <option>SP</option>
-                            <option>TO</option>
-                            >                      
+                            <option>TO</option>                            >                      
                         </select><br><br>
                         CEP: <input type="text" name="cep"> 
                             <br><br>                        

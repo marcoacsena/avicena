@@ -84,16 +84,31 @@ public boolean atualizarPacienteVO(PacienteVO pacienteVO) {
 
     boolean atualizacao = false;
 
-    String query = "UPDATE paciente SET nomePaciente = ? WHERE cpfPaciente = ?";
+    String query = "UPDATE paciente SET nomePaciente = ?, celMensagemPaciente = ?,"
+                    + " foneResidencial = ?, foneComercial = ?, emailPaciente = ?, cpfPaciente = ?,"
+                    + " cnpjPaciente = ?, logradouro = ?, numeroLogradouro = ?, complemento = ?,"
+                    + " bairro = ?, cidade = ?, uf = ?, cep = ?"
+                    + " WHERE cpfPaciente = ?";
 
         Connection conn = ConexaoComBanco.getConnection();
         PreparedStatement prepStmt = ConexaoComBanco.getPreparedStatement(conn, query);
 
         try {
-            prepStmt.setString(2, pacienteVO.getCpfPaciente());
-            prepStmt.setString(1, pacienteVO.getNomePaciente());
-            
-
+            prepStmt.setString(1,  pacienteVO.getNomePaciente());
+            prepStmt.setString(2,  pacienteVO.getCelMensagemPaciente());
+            prepStmt.setString(3,  pacienteVO.getFoneResidencial());
+            prepStmt.setString(4,  pacienteVO.getFoneComercial());
+            prepStmt.setString(5,  pacienteVO.getEmailPaciente());
+            prepStmt.setString(6,  pacienteVO.getCpfPaciente());
+            prepStmt.setString(7,  pacienteVO.getCnpjPaciente());
+            prepStmt.setString(8,  pacienteVO.getLogradouro());
+            prepStmt.setString(9,  pacienteVO.getNumLogradouro());
+            prepStmt.setString(10,  pacienteVO.getComplemento());
+            prepStmt.setString(11,  pacienteVO.getBairro());
+            prepStmt.setString(12,  pacienteVO.getCidade());
+            prepStmt.setString(13,  pacienteVO.getUf());
+            prepStmt.setString(14,  pacienteVO.getCep());            
+            prepStmt.setString(15, pacienteVO.getCpfPaciente());
             int codigoRetorno = prepStmt.executeUpdate();
 
             if (codigoRetorno == 1) {

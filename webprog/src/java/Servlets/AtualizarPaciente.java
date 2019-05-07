@@ -32,9 +32,9 @@ PacienteVO pacienteVO = new PacienteVO();
         pacienteVO.setCep(request.getParameter("uf"));
         pacienteVO.setUf(request.getParameter("cep"));
                                       
-            PacienteController pacientecontroller = new PacienteController();
-            boolean atualizado = pacientecontroller.atualizarPacienteVO(pacienteVO);
-            Boolean resultadoDaAtualizacao = false;
+        PacienteController pacientecontroller = new PacienteController();
+        boolean atualizado = pacientecontroller.atualizarPacienteVO(pacienteVO);
+        Boolean resultadoDaAtualizacao = false;
             
             if(atualizado){                
                 resultadoDaAtualizacao = true;
