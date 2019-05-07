@@ -17,9 +17,9 @@ public class PesquisarPacientePorCpf extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-            pacienteVO.setCpfPaciente(request.getParameter("cpfpaciente"));            
-                              
+            pacienteVO.setCpfPaciente(request.getParameter("cpfpaciente"));         
             PacienteController pacientecontroller = new PacienteController();
+            Boolean resultadoDaPesquisaPorCpf = false;
             pacienteVO = pacientecontroller.pesquisarPacienteVOPorCpf(pacienteVO.getCpfPaciente());
             
             if(pacienteVO != null){               
@@ -39,13 +39,14 @@ public class PesquisarPacientePorCpf extends HttpServlet {
                 request.setAttribute("cidade", pacienteVO.getCidade());
                 request.setAttribute("uf", pacienteVO.getUf());
                 request.setAttribute("cep", pacienteVO.getCep());
-                
+                                
                 System.out.println(pacienteVO);
+                resultadoDaPesquisaPorCpf = true;
+                request.setAttribute("pacientevoretornado", resultadoDaPesquisaPorCpf);
                 request.getRequestDispatcher("PesquisarPacientePorCpf.jsp").forward(request, response);
                 
             }else {
                 System.out.println("O paciente não foi encontrado!"); 
-                Boolean resultadoDaPesquisaPorCpf = false;
                 request.setAttribute("pacientevoretornado", resultadoDaPesquisaPorCpf);
                 request.getRequestDispatcher("PesquisarPacientePorCpf.jsp").forward(request, response);    
                     }

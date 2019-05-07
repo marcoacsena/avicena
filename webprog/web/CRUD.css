@@ -43,7 +43,7 @@ a{
     float: right;/*propriedade indicando que a Área flutuará a direita*/
     margin-top: 0px;/*Margen superior com 1 pixel*/
     margin-left: -1px;
-    width: 70%;/*Ocupando 74% da largura total destinada para o corpo*/
+    width: 60%;/*Ocupando 74% da largura total destinada para o corpo*/
     height: 700px;/*Altura de 494 pixels*/
 }
 

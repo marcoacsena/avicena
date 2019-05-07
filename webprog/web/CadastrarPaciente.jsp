@@ -38,7 +38,7 @@
                     
                     <fieldset><legend>Endereço</legend>
                         <br>
-                        Rua<a>*</a>: <input type="text" name="logradouro" required size="80"> Num: <input type="text" name="numlogradouro" required size="3"><br><br>
+                        Rua<a>*</a>: <input type="text" name="logradouro" required size="80"> Num<a>*</a>: <input type="text" name="numlogradouro" required size="3"><br><br>
                         Complemento: <input type="text" name="complemento" size="80"><br><br>
                         Bairro<a>*</a>: <input type="text" name="bairro" required> Cidade<a>*</a>: <input type="text" name="cidade" required> UF: <select style="width:150px;" name="uf" required><option selected disabled>Selecione um estado</option>
                             <option>AC</option>
