@@ -23,7 +23,7 @@
                     <p><a>*</a>Campos de preenchimento obrigatório</p>                    
                     <input type="hidden" id="excluir" name="excluir" value="excluir">
                     CPF<a>*</a>: 
-                    <input type="text" name="cpfpaciente" required><br><br>
+                    <input type="text" name="cpfpaciente" required onkeyup="maskIt(this, event, '###.###.###-##')"><br><br>
                     
                     <input type="submit" value="Excluir Paciente">                
 
