@@ -30,7 +30,7 @@
                     e-mail:
                     <input type="email" name="email" size="60"><br><br>
                     CPF<a>*</a>:                                                                                    
-                    <input type="text" name="cpfpaciente" required onkeyup="maskIt(this, event, '###.###.###-##')"> CNPJ: <input type="text" name="cnpjpaciente"><br><br>
+                    <input type="text" name="cpfpaciente" required onkeyup="maskIt(this, event, '###.###.###-##')"> CNPJ: <input type="text" name="cnpjpaciente" onkeyup="maskIt(this, event, '##.###.###/####-##')"><br><br>
 
                 </fieldset>
 
@@ -80,7 +80,7 @@
                         <option>TO</option>                                                 
                     </select><br><br>
                     CEP:
-                    <input type="text" name="cep"> 
+                    <input type="text" name="cep" onkeyup="maskIt(this, event, '#####-###')"> 
                     <br><br>                        
 
                     <input type="reset" value="Limpar Campos">
