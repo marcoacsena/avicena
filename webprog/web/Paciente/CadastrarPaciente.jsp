@@ -11,13 +11,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="mascaras.js"></script>
         <link type="text/css" rel="stylesheet" href="PacienteCRUD.css">
+        <link type="text/css" rel="stylesheet" href="Paciente/PacienteCRUD.css">
         <title>Cadastrar Paciente</title>
     </head>
     <body class="body">
         <hr>
         <h1>Cadastro de Paciente</h1>
         <h3>Por gentileza, preencher os dados do paciente a ser cadastrado:</h3> 
-        <form action="crud" method="POST">
+        <form action="../crud" method="POST">
             <div class="form1">
                 <fieldset><legend>Paciente</legend>                    
                     <a>*</a>Campos de preenchimento obrigatório <br><br>

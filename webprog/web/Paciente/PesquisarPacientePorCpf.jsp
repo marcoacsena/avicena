@@ -11,6 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="mascaras.js"></script>
         <link type="text/css" rel="stylesheet" href="PacienteCRUD.css">
+        <link type="text/css" rel="stylesheet" href="Paciente/PacienteCRUD.css">
         <title>Pesquisa de Pacientes por CPF</title>
     </head>
     <body class="body">
@@ -18,7 +19,7 @@
         <div class="consultaCPF">
             <h2>Pesquisar Paciente por CPF!</h2>
 
-            <form method="post" action="pesquisarpacienteporcpf">
+            <form method="post" action="../pesquisarpacienteporcpf">
 
                 <fieldset><legend>Digite o CPF do Paciente a ser consultado na base de dados</legend>
                     <p><a>*</a>Campos de preenchimento obrigatório</p>                    
@@ -46,8 +47,8 @@
                     Boolean PacienteVORetornado = (Boolean) obj;
 
                     if (!PacienteVORetornado) {%>                     
-            <input type="text" size="100" style="margin-left: 5px;" value="<% out.println("Paciente não encontrado!"
-                               + " Tente novamente. Se o Paciente não for cadastrado, por gentileza, cadastrá-lo!!");%>">               
+                   <input type="text" size="100" style="margin-left: 5px;" value="<% out.println("Paciente não encontrado!"
+                        + " Tente novamente. Se o Paciente não for cadastrado, por gentileza, cadastrá-lo!!");%>">               
             <%} else {%>
 
             <form action="atualizarpaciente" method="post">

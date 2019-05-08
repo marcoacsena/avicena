@@ -1,8 +1,15 @@
 .principal{width: 100%}
 .titulo {text-align: center}
 .navbar {height: 50px;}
-.nav-item {font-size: x-large;} 
-.nav-link {font-size: x-large; padding: 10px 10px;}
+.nav-item {font-size: large;} 
+.nav-link {font-size: large; padding: 10px 10px;}
+.sair {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
 .login{
    background-color: powderblue;
    padding: 4px;

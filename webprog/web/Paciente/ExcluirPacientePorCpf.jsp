@@ -11,6 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="mascaras.js"></script>
         <link type="text/css" rel="stylesheet" href="PacienteCRUD.css">
+        <link type="text/css" rel="stylesheet" href="Paciente/PacienteCRUD.css">
         <title>Excluir Paciente por CPF</title>
     </head>
     <body class="body">
@@ -18,7 +19,7 @@
         <div class="excluirCPF">
             <h3>Excluir Paciente por CPF!</h3>
 
-            <form method="post" action="crud">
+            <form method="post" action="../crud">
 
                 <fieldset><legend>Digite o CPF do Paciente que deseja excluir da base de dados:</legend>
                     <p><a>*</a>Campos de preenchimento obrigatório</p>                    

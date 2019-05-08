@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link type="text/css" rel="stylesheet" href="PacienteCRUD.css">
+        <link type="text/css" rel="stylesheet" href="Paciente/PacienteCRUD.css">
         <title>Cliente Cadastrado</title>
     </head>
     <body class="body">
@@ -49,12 +49,12 @@
                             <input type="text" value="<%= request.getAttribute("cep")%>"> 
                             <br><br>
                             </fieldset>
-                </div>
-</form> 
+                            </div>
+                            </form> 
 
-<footer class="footer">                
-    &copy; Desenvolvido por Luciane Benetti e Marco Sena.
-</footer>
+                            <footer class="footer">                
+                                &copy; Desenvolvido por Luciane Benetti e Marco Sena.
+                            </footer>
 
-</body>
-</html>
+                            </body>
+                            </html>

@@ -1,11 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Servlets.Paciente;
+package Servlets.Medico;
 
-import controller.Paciente.PacienteController;
+import controller.Medico.MedicoController;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -13,28 +8,21 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.vo.Paciente.PacienteVO;
+import model.vo.Medico.MedicoVO;
 
-/**
- *
- * @author 80119050
- */
-public class ListarPacientes extends HttpServlet {
-   
+public class ListarMedicos extends HttpServlet {
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-           
-        PacienteController pacienteController = new PacienteController();        
-        ArrayList<PacienteVO> pacientesVO = pacienteController.listarTodosOsPacientesVO();
-        
-        if(pacientesVO != null){
-            request.setAttribute("pacientes", pacientesVO);
-            request.getRequestDispatcher("Paciente/ListarTodosOsPacientes.jsp").forward(request, response);
-           // System.out.print(pacientesVO);
-            }
-        
+
+        MedicoController medicoController = new MedicoController();
+        ArrayList<MedicoVO> medicosVO = medicoController.listarTodosOsMedicosVO();
+
+        if (medicosVO != null) {
+            request.setAttribute("medicos", medicosVO);
+            request.getRequestDispatcher("Medico/ListarTodosOsMedicos.jsp").forward(request, response);
+            System.out.print(medicosVO);
         }
     }
 

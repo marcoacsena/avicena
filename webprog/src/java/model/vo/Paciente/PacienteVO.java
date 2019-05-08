@@ -1,8 +1,7 @@
-
 package model.vo.Paciente;
 
 public class PacienteVO {
-    
+
     private int codigoPaciente;
     private String nomePaciente;
     private String celMensagemPaciente;
@@ -140,20 +139,18 @@ public class PacienteVO {
 
     public void setCep(String cep) {
         this.cep = cep;
-    }   
+    }
 
     @Override
     public String toString() {
-        return "PacienteVO{" + "codigoPaciente=" + codigoPaciente + ", nomePaciente=" 
-                + nomePaciente + ", celMensagemPaciente=" + celMensagemPaciente 
-                + ", foneResidencial=" + foneResidencial + ", foneComercial=" 
-                + foneComercial + ", emailPaciente=" + emailPaciente + ", cpfPaciente=" 
-                + cpfPaciente + ", cnpjPaciente=" + cnpjPaciente + ", logradouro=" 
-                + logradouro + ", numLogradouro=" + numLogradouro + ", complemento=" 
-                + complemento + ", bairro=" + bairro + ", cidade=" + cidade + ", uf=" 
+        return "PacienteVO{" + "codigoPaciente=" + codigoPaciente + ", nomePaciente="
+                + nomePaciente + ", celMensagemPaciente=" + celMensagemPaciente
+                + ", foneResidencial=" + foneResidencial + ", foneComercial="
+                + foneComercial + ", emailPaciente=" + emailPaciente + ", cpfPaciente="
+                + cpfPaciente + ", cnpjPaciente=" + cnpjPaciente + ", logradouro="
+                + logradouro + ", numLogradouro=" + numLogradouro + ", complemento="
+                + complemento + ", bairro=" + bairro + ", cidade=" + cidade + ", uf="
                 + uf + ", cep=" + cep + '}';
-    }    
-    
-     
-    
+    }
+
 }

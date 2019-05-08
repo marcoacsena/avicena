@@ -39,10 +39,10 @@ PacienteVO pacienteVO = new PacienteVO();
             if(atualizado){                
                 resultadoDaAtualizacao = true;
                 request.setAttribute("atualizacao", resultadoDaAtualizacao);
-                request.getRequestDispatcher("ResultadoDaAtualizacao.jsp").forward(request, response);
+                request.getRequestDispatcher("Paciente/ResultadoDaAtualizacao.jsp").forward(request, response);
             }else { 
                 request.setAttribute("atualizacao", resultadoDaAtualizacao);}             
-                request.getRequestDispatcher("ResultadoDaAtualizacao.jsp").forward(request, response);
+                request.getRequestDispatcher("Paciente/ResultadoDaAtualizacao.jsp").forward(request, response);
            
     }      
 }

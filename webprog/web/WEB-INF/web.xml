@@ -24,6 +24,10 @@
         <servlet-name>SairdoSistema</servlet-name>
         <servlet-class>Servlets.SairdoSistema</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ListarMedicos</servlet-name>
+        <servlet-class>Servlets.Medico.ListarMedicos</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Crud</servlet-name>
         <url-pattern>/crud</url-pattern>
@@ -51,6 +55,10 @@
     <welcome-file-list>
         <welcome-file>Index.jsp</welcome-file>
     </welcome-file-list>
+    <servlet-mapping>
+        <servlet-name>ListarMedicos</servlet-name>
+        <url-pattern>/listarmedicos</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

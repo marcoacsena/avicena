@@ -11,14 +11,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link type="text/css" rel="stylesheet" href="PacienteCRUD.css">
+        <link type="text/css" rel="stylesheet" href="Paciente/PacienteCRUD.css">
         <title>Todos os Pacientes da Clínica Avicena</title>
     </head>
     <body class="body">
 
         <h1>Lista dos pacientes cadastrados na clínica AVICENA</h1><br> 
-        <input type="button" value = "Retornar para a Página Principal do sistema AVICENA" onclick="history.go(-1)"><br><br>    
-
         <table>
             <tr>
                 <th>Id</th>
@@ -64,6 +62,8 @@
                 }
             %>
         </table>      
+
+        <input type="button" value = "Retornar para a Página Principal do sistema AVICENA" onclick="history.go(-1)"><br><br>    
 
         <footer class="footer">                
             &copy; Desenvolvido por Luciane Benetti e Marco Sena.

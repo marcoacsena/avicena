@@ -83,7 +83,7 @@ public class Crud extends HttpServlet {
                             request.setAttribute("uf", pacienteVO.getUf());
                             request.setAttribute("cep", pacienteVO.getCep());
 
-                            request.getRequestDispatcher("MostrarPacienteCadastrado.jsp").forward(request, response);
+                            request.getRequestDispatcher("Paciente/MostrarPacienteCadastrado.jsp").forward(request, response);
                         }
                         break;
 
@@ -96,7 +96,7 @@ public class Crud extends HttpServlet {
                         if (pacienteController.excluirPacientePorCpf(pacienteVO.getCpfPaciente())) {
 
                             request.setAttribute("cpfpaciente", pacienteVO.getCpfPaciente());
-                            request.getRequestDispatcher("ExcluirPacientePorCpf.jsp").forward(request, response);
+                            request.getRequestDispatcher("Paciente/ExcluirPacientePorCpf.jsp").forward(request, response);
                         }
 
                         break;

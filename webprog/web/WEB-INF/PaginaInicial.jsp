@@ -83,10 +83,10 @@
                             Pacientes
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="PesquisarPacientePorCpf.jsp">Pesquisar Paciente Por CPF</a>
-                            <a class="dropdown-item" href="CadastrarPaciente.jsp">Cadastrar Paciente</a>
+                            <a class="dropdown-item" href="Paciente/PesquisarPacientePorCpf.jsp">Pesquisar Paciente Por CPF</a>
+                            <a class="dropdown-item" href="Paciente/CadastrarPaciente.jsp">Cadastrar Paciente</a>
                             <a class="dropdown-item" href="listarpacientes">Listar Todos os Pacientes</a>
-                            <a class="dropdown-item" href="ExcluirPacientePorCpf.jsp">Excluir Paciente</a>
+                            <a class="dropdown-item" href="Paciente/ExcluirPacientePorCpf.jsp">Excluir Paciente</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -100,16 +100,37 @@
                             <a class="dropdown-item" href="#">Excluir Consulta</a>
                         </div>
                     </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Convenios
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Pesquisar Convenio</a>
+                            <a class="dropdown-item" href="#">Cadastrar Convenio</a>
+                            <a class="dropdown-item" href="#">Listar Todas as Convenio</a>                             
+                            <a class="dropdown-item" href="#">Excluir Convenio</a>
+                        </div>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Médicos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Pesquisar Medico</a>
-                            <a class="dropdown-item" href="#">Cadastrar Medico</a>
-                            <a class="dropdown-item" href="#">Listar Todos os Medicos</a>
-                            <a class="dropdown-item" href="#">Atualizar Medico</a> 
-                            <a class="dropdown-item" href="#">Excluir Medico</a>
+                            <a class="dropdown-item" href="Medico/PesquisarMedicoPorCpf.jsp">Pesquisar Medico por CPF</a>
+                            <a class="dropdown-item" href="Medico/CadastrarMedico.jsp">Cadastrar Medico</a>
+                            <a class="dropdown-item" href="listarmedicos">Listar Todos os Medicos</a>
+                            <a class="dropdown-item" href="Medico/ExcluirMedico">Excluir Medico</a>
+                        </div>
+                    </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Prontuario
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Pesquisar Prontuario</a>
+                            <a class="dropdown-item" href="#">Cadastrar Prontuario</a>
+                            <a class="dropdown-item" href="#">Listar Todos os Prontuario</a>
+                            <a class="dropdown-item" href="#">Excluir Prontuario</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -120,8 +141,18 @@
                             <a class="dropdown-item" href="#">Pesquisar Especialidade</a>
                             <a class="dropdown-item" href="#">Cadastrar Especialidade</a>
                             <a class="dropdown-item" href="#">Listar Todas as Especialidades</a>
-                            <a class="dropdown-item" href="#">Atualizar Especialidade</a> 
                             <a class="dropdown-item" href="#">Excluir Especialidade</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Especializacao
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Pesquisar Especializacao</a>
+                            <a class="dropdown-item" href="#">Cadastrar Especializacao</a>
+                            <a class="dropdown-item" href="#">Listar Todas as Especializacao</a>
+                            <a class="dropdown-item" href="#">Excluir Especializacao</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -135,9 +166,8 @@
                            
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a href="sairdosistema" style="color: white; padding: 10px; 
-                           margin-bottom: 0px; ">
+                    <li class="sair">
+                        <a href="sairdosistema">
                             Sair
                         </a>
                         
