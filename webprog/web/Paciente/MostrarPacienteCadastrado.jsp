@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link type="text/css" rel="stylesheet" href="../CRUD.css">
+        <link type="text/css" rel="stylesheet" href="../PacienteCRUD.css">
         <title>Cliente Cadastrado</title>
     </head>
     <body class="body">
