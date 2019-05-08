@@ -51,8 +51,7 @@ a{
     margin-right: 8%;    
     margin-left: 1%;
     width: 60%;/*Ocupando 74% da largura total destinada para o corpo*/
-    height: 700px;/*Altura de 494 pixels*/   
-    
+    height: 700px;/*Altura de 494 pixels*/      
 }
 .excluirCPF {
     background-color: lightblue;/*Cor de fundo*/     
@@ -61,14 +60,19 @@ a{
     height: 700px;/*Altura de 494 pixels*/
 }
 td,th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 6px;
-    }  
-    
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 6px;
+}  
 tr:nth-child(even){background-color: beige;}
-tr:nth-child(odd){background-color: burlywood;}
-    
-.footer {float: left; width: 100%; background-color:cadetblue; text-align: center; padding: 2px; margin-top: 200px; 
-        margin-left: 0%; bottom: 0px;}
-
+tr:nth-child(odd){background-color: burlywood;}  
+.footer {
+    float: left; 
+    width: 100%; 
+    background-color:cadetblue; 
+    text-align: center; 
+    padding: 2px; 
+    margin-top: 200px; 
+    margin-left: 0%; 
+    bottom: 0px;
+}

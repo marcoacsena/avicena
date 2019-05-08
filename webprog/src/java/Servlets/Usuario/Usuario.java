@@ -1,4 +1,3 @@
-
 package Servlets.Usuario;
 
 import controller.Paciente.PacienteController;
@@ -20,17 +19,16 @@ public class Usuario extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        
+
         String var1 = request.getParameter("cadastrar");
         String var2 = request.getParameter("validar");
         String nome = request.getParameter("nome");
         String senha = MD5(request.getParameter("senha"));
         UsuarioController usuarioController;
-        UsuarioVO usuarioVO;           
-       
+        UsuarioVO usuarioVO;
+
 //        System.out.println("O nome é: " + nome);
 //        System.out.println("a senha é: " + senha);
-
         ArrayList<String> variaveis = new ArrayList<>();
         variaveis.add(var1);
         variaveis.add(var2);
@@ -46,30 +44,30 @@ public class Usuario extends HttpServlet {
                         usuarioVO = new UsuarioVO();
                         usuarioVO.setLogin(nome);
                         usuarioVO.setSenha(senha);
-                        
+
                         System.out.println(usuarioVO);
                         usuarioController = new UsuarioController();
-                        
+
                         int novoId = usuarioController.cadastrarUsuarioVO(usuarioVO);
-                        System.out.println("O novo Id é: " +novoId);
-                        
-                        
+                        System.out.println("O novo Id é: " + novoId);
+
                         if (novoId > 0) {
-                           
+
                             request.setAttribute("codigodousuario", usuarioVO.getCodigoUsuario());
                             request.setAttribute("nome", usuarioVO.getLogin());
-                            request.setAttribute("senha", usuarioVO.getSenha());                 
+                            request.setAttribute("senha", usuarioVO.getSenha());
                             request.getRequestDispatcher("Index.jsp").forward(request, response);
-                        } else{
-                            Boolean usuariocadastrado = false; 
+                        } else {
+                            Boolean usuariocadastrado = false;
                             request.setAttribute("usuariocadastrado", usuariocadastrado);
-                            request.getRequestDispatcher("Usuario/CadastrarUsuario.jsp").forward(request, response);}
+                            request.getRequestDispatcher("CadastrarUsuario.jsp").forward(request, response);
+                        }
                         break;
 
                     case "validar":
-                       
+
                         usuarioVO = new UsuarioVO();
-                        usuarioVO.setLogin(nome);  
+                        usuarioVO.setLogin(nome);
                         usuarioVO.setSenha(senha);
 
                         usuarioController = new UsuarioController();
@@ -77,11 +75,11 @@ public class Usuario extends HttpServlet {
                         UsuarioVO usuarioValidado = usuarioController.pesquisarUsuarioVO(usuarioVO);
                         if (usuarioValidado != null) {
                             request.setAttribute("login", usuarioVO.getLogin());
-                            request.setAttribute("senha",usuarioVO.getSenha());
+                            request.setAttribute("senha", usuarioVO.getSenha());
                             request.getRequestDispatcher("WEB-INF/PaginaInicial.jsp").forward(request, response);
                         } else {
-                            Boolean validacao = false;                            
-                            request.setAttribute("usuariovalidado", validacao);                            
+                            Boolean validacao = false;
+                            request.setAttribute("usuariovalidado", validacao);
                             request.getRequestDispatcher("Index.jsp").forward(request, response);
                         }
 
@@ -93,13 +91,11 @@ public class Usuario extends HttpServlet {
 
                 }
             }
-        }           
- 
         }
-            
+    }
 
     private String MD5(String senha) {
-        
+
         try {
             MessageDigest digest = MessageDigest.getInstance("MD5");
             digest.update(senha.getBytes());
@@ -109,9 +105,8 @@ public class Usuario extends HttpServlet {
             ns.printStackTrace();
         }
         return senha;
-        
-        }   
 
+    }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -153,4 +148,3 @@ public class Usuario extends HttpServlet {
     }// </editor-fold>
 
 }
-

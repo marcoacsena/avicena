@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="../mascaras.js"></script>
+        <script type="text/javascript" src="mascaras.js"></script>
         <link type="text/css" rel="stylesheet" href="PacienteCRUD.css">
         <title>Pesquisa de Pacientes por CPF</title>
     </head>
@@ -18,7 +18,7 @@
         <div class="consultaCPF">
             <h2>Pesquisar Paciente por CPF!</h2>
 
-            <form method="post" action="../pesquisarpacienteporcpf">
+            <form method="post" action="pesquisarpacienteporcpf">
 
                 <fieldset><legend>Digite o CPF do Paciente a ser consultado na base de dados</legend>
                     <p><a>*</a>Campos de preenchimento obrigatório</p>                    

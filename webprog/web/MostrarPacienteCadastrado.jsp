@@ -49,16 +49,12 @@
                             <input type="text" value="<%= request.getAttribute("cep")%>"> 
                             <br><br>
                             </fieldset>
-                            </div>
-                            </form> 
+                </div>
+</form> 
 
-                            <form action="WEB-INF/PaginaInicial.jsp" method="POST">
-                                <input type="submit" value="Retornar para a Página Principal do SISTEMA AVICENA"><br><br>
-                            </form>
+<footer class="footer">                
+    &copy; Desenvolvido por Luciane Benetti e Marco Sena.
+</footer>
 
-                            <footer class="footer">                
-                                &copy; Desenvolvido por Luciane Benetti e Marco Sena.
-                            </footer>
-
-                            </body>
-                            </html>
+</body>
+</html>

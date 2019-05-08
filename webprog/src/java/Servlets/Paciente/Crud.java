@@ -42,7 +42,7 @@ public class Crud extends HttpServlet {
                 switch (var) {
                     case "cadastrar":
 
-                        System.out.println("A variável é: " + variavel.get(i));
+                     //   System.out.println("A variável é: " + variavel.get(i));
                         pacienteVO = new PacienteVO();
                         pacienteVO.setNomePaciente(request.getParameter("nomepaciente"));
                         pacienteVO.setCelMensagemPaciente(request.getParameter("celularpaciente"));
@@ -83,7 +83,7 @@ public class Crud extends HttpServlet {
                             request.setAttribute("uf", pacienteVO.getUf());
                             request.setAttribute("cep", pacienteVO.getCep());
 
-                            request.getRequestDispatcher("Paciente/MostrarPacienteCadastrado.jsp").forward(request, response);
+                            request.getRequestDispatcher("MostrarPacienteCadastrado.jsp").forward(request, response);
                         }
                         break;
 
@@ -96,7 +96,7 @@ public class Crud extends HttpServlet {
                         if (pacienteController.excluirPacientePorCpf(pacienteVO.getCpfPaciente())) {
 
                             request.setAttribute("cpfpaciente", pacienteVO.getCpfPaciente());
-                            request.getRequestDispatcher("Paciente/ExcluirPacientePorCpf.jsp").forward(request, response);
+                            request.getRequestDispatcher("ExcluirPacientePorCpf.jsp").forward(request, response);
                         }
 
                         break;

@@ -31,8 +31,8 @@ public class ListarPacientes extends HttpServlet {
         
         if(pacientesVO != null){
             request.setAttribute("pacientes", pacientesVO);
-            request.getRequestDispatcher("Paciente/ListarTodosOsPacientes.jsp").forward(request, response);
-            System.out.print(pacientesVO);
+            request.getRequestDispatcher("ListarTodosOsPacientes.jsp").forward(request, response);
+           // System.out.print(pacientesVO);
             }
         
         }

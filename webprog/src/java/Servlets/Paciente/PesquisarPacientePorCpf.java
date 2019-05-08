@@ -42,12 +42,12 @@ public class PesquisarPacientePorCpf extends HttpServlet {
                                 
                 resultadoDaPesquisaPorCpf = true;
                 request.setAttribute("pacientevoretornado", resultadoDaPesquisaPorCpf);
-                request.getRequestDispatcher("Paciente/PesquisarPacientePorCpf.jsp").forward(request, response);
+                request.getRequestDispatcher("PesquisarPacientePorCpf.jsp").forward(request, response);
                 
             }else {
                 System.out.println("O paciente não foi encontrado!"); 
                 request.setAttribute("pacientevoretornado", resultadoDaPesquisaPorCpf);
-                request.getRequestDispatcher("Paciente/PesquisarPacientePorCpf.jsp").forward(request, response);    
+                request.getRequestDispatcher("PesquisarPacientePorCpf.jsp").forward(request, response);    
                     }
         
         

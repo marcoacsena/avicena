@@ -58,7 +58,6 @@
                 <td><%= pacienteVO.getCidade()%></td>
                 <td><%= pacienteVO.getUf()%></td>
                 <td><%= pacienteVO.getCep()%></td>
-
             </tr>                   
 
             <%

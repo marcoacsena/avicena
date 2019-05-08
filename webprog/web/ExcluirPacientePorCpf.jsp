@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="../mascaras.js"></script>
+        <script type="text/javascript" src="mascaras.js"></script>
         <link type="text/css" rel="stylesheet" href="PacienteCRUD.css">
         <title>Excluir Paciente por CPF</title>
     </head>
@@ -18,7 +18,7 @@
         <div class="excluirCPF">
             <h3>Excluir Paciente por CPF!</h3>
 
-            <form method="post" action="../crud">
+            <form method="post" action="crud">
 
                 <fieldset><legend>Digite o CPF do Paciente que deseja excluir da base de dados:</legend>
                     <p><a>*</a>Campos de preenchimento obrigatório</p>                    
@@ -34,9 +34,7 @@
             foi Excluído!
             <br><br>
 
-            <form action="WEB-INF/PaginaInicial.jsp" method="POST">
-                <input type="submit" value="Retornar para a Página Principal do SISTEMA AVICENA"><br><br>
-            </form>
+            <input type="button" value = "Retornar para a Página Principal do sistema AVICENA" onclick="history.go(-1)"><br><br>    
 
 
         </div>
