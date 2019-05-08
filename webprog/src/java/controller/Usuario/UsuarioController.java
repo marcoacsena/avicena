@@ -1,8 +1,8 @@
 
-package controller;
+package controller.Usuario;
 
-import model.bo.UsuarioBO;
-import model.vo.UsuarioVO;
+import model.bo.Usuario.UsuarioBO;
+import model.vo.Usuario.UsuarioVO;
 
 
 public class UsuarioController {

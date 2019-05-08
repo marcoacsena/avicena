@@ -1,9 +1,9 @@
-package model.bo;
+package model.bo.Paciente;
 
 
 import java.util.ArrayList;
-import model.dao.PacienteDAO;
-import model.vo.PacienteVO;
+import model.dao.Paciente.PacienteDAO;
+import model.vo.Paciente.PacienteVO;
 
 public class PacienteBO {
         

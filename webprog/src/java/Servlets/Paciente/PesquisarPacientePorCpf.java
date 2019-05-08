@@ -1,13 +1,13 @@
-package Servlets;
+package Servlets.Paciente;
 
-import controller.PacienteController;
+import controller.Paciente.PacienteController;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.vo.PacienteVO;
+import model.vo.Paciente.PacienteVO;
 
 public class PesquisarPacientePorCpf extends HttpServlet {
 
@@ -40,15 +40,14 @@ public class PesquisarPacientePorCpf extends HttpServlet {
                 request.setAttribute("uf", pacienteVO.getUf());
                 request.setAttribute("cep", pacienteVO.getCep());
                                 
-                System.out.println(pacienteVO);
                 resultadoDaPesquisaPorCpf = true;
                 request.setAttribute("pacientevoretornado", resultadoDaPesquisaPorCpf);
-                request.getRequestDispatcher("PesquisarPacientePorCpf.jsp").forward(request, response);
+                request.getRequestDispatcher("Paciente/PesquisarPacientePorCpf.jsp").forward(request, response);
                 
             }else {
                 System.out.println("O paciente não foi encontrado!"); 
                 request.setAttribute("pacientevoretornado", resultadoDaPesquisaPorCpf);
-                request.getRequestDispatcher("PesquisarPacientePorCpf.jsp").forward(request, response);    
+                request.getRequestDispatcher("Paciente/PesquisarPacientePorCpf.jsp").forward(request, response);    
                     }
         
         

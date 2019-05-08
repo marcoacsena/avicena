@@ -1,8 +1,8 @@
 
-package model.bo;
+package model.bo.Usuario;
 
-import model.dao.UsuarioDAO;
-import model.vo.UsuarioVO;
+import model.dao.Usuario.UsuarioDAO;
+import model.vo.Usuario.UsuarioVO;
 
 
 public class UsuarioBO {

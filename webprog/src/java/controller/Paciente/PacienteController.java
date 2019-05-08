@@ -1,5 +1,5 @@
 
-package controller;
+package controller.Paciente;
 
 /**
  *
@@ -7,8 +7,8 @@ package controller;
  */
 
 import java.util.ArrayList;
-import model.bo.PacienteBO;
-import model.vo.PacienteVO;
+import model.bo.Paciente.PacienteBO;
+import model.vo.Paciente.PacienteVO;
 
 public class PacienteController {
     

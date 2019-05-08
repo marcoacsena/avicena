@@ -1,8 +1,8 @@
 
-package Servlets;
+package Servlets.Usuario;
 
-import controller.PacienteController;
-import controller.UsuarioController;
+import controller.Paciente.PacienteController;
+import controller.Usuario.UsuarioController;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.security.MessageDigest;
@@ -12,7 +12,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.vo.UsuarioVO;
+import model.vo.Usuario.UsuarioVO;
 import sun.misc.BASE64Encoder;
 
 public class Usuario extends HttpServlet {
@@ -63,7 +63,7 @@ public class Usuario extends HttpServlet {
                         } else{
                             Boolean usuariocadastrado = false; 
                             request.setAttribute("usuariocadastrado", usuariocadastrado);
-                            request.getRequestDispatcher("CadastrarUsuario.jsp").forward(request, response);}
+                            request.getRequestDispatcher("Usuario/CadastrarUsuario.jsp").forward(request, response);}
                         break;
 
                     case "validar":

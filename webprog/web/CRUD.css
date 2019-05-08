@@ -3,12 +3,10 @@
     width: 100%;
     padding: 0px;
 }
-
 a{
     color: red;
 }
-
-#form1 {    
+.form1 {    
     background-color: lightblue; 
     padding: 5px;
     margin-top: 0px;/*Margen superior com 1 pixel*/
@@ -17,8 +15,7 @@ a{
     width: 47%; /*Ocupando 24% da largura total destinada para o corpo*/
     height: 700px; /*Altura de 500 pixels*/   
 }
-
-#form2 {  
+.form2 {  
     background-color: lightblue; 
     padding: 5px;
     margin-top: 0px;/*Margen superior com 1 pixel*/
@@ -27,8 +24,7 @@ a{
     width: 51.5%; /*Ocupando 24% da largura total destinada para o corpo*/
     height: 700px; /*Altura de 500 pixels*/    
 }
-
-#consultaCPF {
+.consultaCPF {
     background-color: lightblue; 
     padding: 0px;
     margin-top: 0px;/*Margen superior com 1 pixel*/
@@ -37,7 +33,7 @@ a{
     width: 29.1%; /*Ocupando 24% da largura total destinada para o corpo*/
     height: 700px; /*Altura de 500 pixels*/
 }
-#resultadodaconsultaCPF {
+.resultadodaconsultaCPF {
     background-color: lightblue;/*Cor de fundo*/    
     padding: 0px;/*Margen interna de 3 pixels*/
     margin-top: 0px;/*Margen superior com 1 pixel*/
@@ -47,7 +43,7 @@ a{
     width: 60%;/*Ocupando 74% da largura total destinada para o corpo*/
     height: 700px;/*Altura de 494 pixels*/
 }
-#resultadodaatualizacao{
+.resultadodaatualizacao{
     background-color: lightblue;/*Cor de fundo*/    
     padding: 0px;/*Margen interna de 3 pixels*/
     margin-top: 0px;/*Margen superior com 1 pixel*/
@@ -58,26 +54,20 @@ a{
     height: 700px;/*Altura de 494 pixels*/   
     
 }
-
-#excluirCPF {
+.excluirCPF {
     background-color: lightblue;/*Cor de fundo*/     
     margin-top: 0px;/*Margen superior com 1 pixel*/
     width: 100%;/*Ocupando 74% da largura total destinada para o corpo*/
     height: 700px;/*Altura de 494 pixels*/
 }
-
 td,th {
-        
         border: 1px solid #dddddd;
         text-align: left;
         padding: 6px;
-    }   
+    }  
     
-    tr:nth-child(even){background-color: beige;}
-    tr:nth-child(odd){background-color: burlywood;}
-    
+tr:nth-child(even){background-color: beige;}
+tr:nth-child(odd){background-color: burlywood;}
     
 .footer {float: left; width: 100%; background-color:cadetblue; text-align: center; padding: 2px; margin-top: 200px; 
         margin-left: 0%; bottom: 0px;}
-
-

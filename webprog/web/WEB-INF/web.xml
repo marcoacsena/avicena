@@ -2,23 +2,23 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>Crud</servlet-name>
-        <servlet-class>Servlets.Crud</servlet-class>
+        <servlet-class>Servlets.Paciente.Crud</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>PesquisarPacientePorCpf</servlet-name>
-        <servlet-class>Servlets.PesquisarPacientePorCpf</servlet-class>
+        <servlet-class>Servlets.Paciente.PesquisarPacientePorCpf</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>atualizarpaciente</servlet-name>
-        <servlet-class>Servlets.AtualizarPaciente</servlet-class>
+        <servlet-class>Servlets.Paciente.AtualizarPaciente</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ListarPacientes</servlet-name>
-        <servlet-class>Servlets.ListarPacientes</servlet-class>
+        <servlet-class>Servlets.Paciente.ListarPacientes</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Usuario</servlet-name>
-        <servlet-class>Servlets.Usuario</servlet-class>
+        <servlet-class>Servlets.Usuario.Usuario</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>SairdoSistema</servlet-name>
@@ -39,7 +39,7 @@
     <servlet-mapping>
         <servlet-name>ListarPacientes</servlet-name>
         <url-pattern>/listarpacientes</url-pattern>
-    </servlet-mapping>    
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Usuario</servlet-name>
         <url-pattern>/usuario</url-pattern>

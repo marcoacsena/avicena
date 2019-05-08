@@ -1,13 +1,13 @@
-package Servlets;
+package Servlets.Paciente;
 
-import controller.PacienteController;
+import controller.Paciente.PacienteController;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.vo.PacienteVO;
+import model.vo.Paciente.PacienteVO;
 
 public class AtualizarPaciente extends HttpServlet {
 
@@ -39,10 +39,10 @@ PacienteVO pacienteVO = new PacienteVO();
             if(atualizado){                
                 resultadoDaAtualizacao = true;
                 request.setAttribute("atualizacao", resultadoDaAtualizacao);
-                request.getRequestDispatcher("ResultadoDaAtualizacao.jsp").forward(request, response);
+                request.getRequestDispatcher("Paciente/ResultadoDaAtualizacao.jsp").forward(request, response);
             }else { 
                 request.setAttribute("atualizacao", resultadoDaAtualizacao);}             
-                request.getRequestDispatcher("ResultadoDaAtualizacao.jsp").forward(request, response);
+                request.getRequestDispatcher("Paciente/ResultadoDaAtualizacao.jsp").forward(request, response);
            
     }      
 }

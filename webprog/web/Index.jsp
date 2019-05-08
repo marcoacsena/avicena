@@ -77,7 +77,7 @@
 
               </form><br> 
               
-              <form action="CadastrarUsuario.jsp" method="post">
+              <form action="Usuario/CadastrarUsuario.jsp" method="post">
                        Não sou cadastrado <input type="submit" value = "Clique aqui!">
              </fieldset>  
         </form> 

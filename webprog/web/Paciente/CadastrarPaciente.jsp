@@ -9,17 +9,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="mascaras.js"></script>
-        <link type="text/css" rel="stylesheet" href="CRUD.css">
+        <script type="text/javascript" src="../mascaras.js"></script>
+        <link type="text/css" rel="stylesheet" href="../CRUD.css">
         <title>Cadastrar Paciente</title>
     </head>
     <body class="body">
         <hr>
         <h1>Cadastro de Paciente</h1>
         <h3>Por gentileza, preencher os dados do paciente a ser cadastrado:</h3> 
-        <form method="post" action="crud">
-            <div id="form1">
-
+        <form action="../crud" method="POST">
+            <div class="form1">
                 <fieldset><legend>Paciente</legend>                    
                     <a>*</a>Campos de preenchimento obrigatório <br><br>
                     <input type="hidden" id="cadastrar" name="cadastrar" value="cadastrar">
@@ -39,7 +38,7 @@
                 <br>
             </div>
 
-            <div id="form2">
+            <div class="form2">
 
                 <fieldset><legend>Endereço</legend>
                     <br>

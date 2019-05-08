@@ -1,4 +1,4 @@
-package model.dao;
+package model.dao.Paciente;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -6,7 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import model.vo.PacienteVO;
+import model.dao.ConexaoComBanco;
+import model.vo.Paciente.PacienteVO;
 
 public class PacienteDAO {
     

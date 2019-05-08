@@ -1,13 +1,13 @@
-package Servlets;
+package Servlets.Paciente;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import controller.PacienteController;
+import controller.Paciente.PacienteController;
 import java.util.ArrayList;
-import model.vo.PacienteVO;
+import model.vo.Paciente.PacienteVO;
 
 /**
  *
@@ -83,7 +83,7 @@ public class Crud extends HttpServlet {
                             request.setAttribute("uf", pacienteVO.getUf());
                             request.setAttribute("cep", pacienteVO.getCep());
 
-                            request.getRequestDispatcher("MostrarPacienteCadastrado.jsp").forward(request, response);
+                            request.getRequestDispatcher("Paciente/MostrarPacienteCadastrado.jsp").forward(request, response);
                         }
                         break;
 
@@ -96,7 +96,7 @@ public class Crud extends HttpServlet {
                         if (pacienteController.excluirPacientePorCpf(pacienteVO.getCpfPaciente())) {
 
                             request.setAttribute("cpfpaciente", pacienteVO.getCpfPaciente());
-                            request.getRequestDispatcher("ExcluirPacientePorCpf.jsp").forward(request, response);
+                            request.getRequestDispatcher("Paciente/ExcluirPacientePorCpf.jsp").forward(request, response);
                         }
 
                         break;

@@ -9,16 +9,16 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="mascaras.js"></script>
-        <link type="text/css" rel="stylesheet" href="CRUD.css">
+        <script type="text/javascript" src="../mascaras.js"></script>
+        <link type="text/css" rel="stylesheet" href="../CRUD.css">
         <title>Pesquisa de Pacientes por CPF</title>
     </head>
     <body class="body">
 
-        <div id="consultaCPF">
+        <div class="consultaCPF">
             <h2>Pesquisar Paciente por CPF!</h2>
 
-            <form method="post" action="pesquisarpacienteporcpf">
+            <form method="post" action="../pesquisarpacienteporcpf">
 
                 <fieldset><legend>Digite o CPF do Paciente a ser consultado na base de dados</legend>
                     <p><a>*</a>Campos de preenchimento obrigatório</p>                    
@@ -36,7 +36,7 @@
 
         </div>
 
-        <div id="resultadodaconsultaCPF">
+        <div class="resultadodaconsultaCPF">
             <h2>Resultado da pesquisa de Paciente por CPF:</h2>
 
             <%
@@ -46,8 +46,8 @@
                     Boolean PacienteVORetornado = (Boolean) obj;
 
                     if (!PacienteVORetornado) {%>                     
-                   <input type="text" size="100" style="margin-left: 5px;" value="<% out.println("Paciente não encontrado!"
-                            + " Tente novamente. Se o Paciente não for cadastrado, por gentileza, cadastrá-lo!!");%>">               
+            <input type="text" size="100" style="margin-left: 5px;" value="<% out.println("Paciente não encontrado!"
+                               + " Tente novamente. Se o Paciente não for cadastrado, por gentileza, cadastrá-lo!!");%>">               
             <%} else {%>
 
             <form action="atualizarpaciente" method="post">
@@ -67,7 +67,7 @@
                 </fieldset>
             </form><br><br>
             <%}
-                        }%>          
+                }%>          
 
         </div>            
 

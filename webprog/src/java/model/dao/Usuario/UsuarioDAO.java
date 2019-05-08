@@ -1,11 +1,12 @@
-package model.dao;
+package model.dao.Usuario;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import model.vo.UsuarioVO;
+import model.dao.ConexaoComBanco;
+import model.vo.Usuario.UsuarioVO;
 
 public class UsuarioDAO {
 

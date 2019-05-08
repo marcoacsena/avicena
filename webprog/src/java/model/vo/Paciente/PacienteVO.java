@@ -1,5 +1,5 @@
 
-package model.vo;
+package model.vo.Paciente;
 
 public class PacienteVO {
     

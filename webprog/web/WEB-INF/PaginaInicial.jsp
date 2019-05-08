@@ -83,10 +83,10 @@
                             Pacientes
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="PesquisarPacientePorCpf.jsp">Pesquisar Paciente Por CPF</a>
-                            <a class="dropdown-item" href="CadastrarPaciente.jsp">Cadastrar Paciente</a>
+                            <a class="dropdown-item" href="Paciente/PesquisarPacientePorCpf.jsp">Pesquisar Paciente Por CPF</a>
+                            <a class="dropdown-item" href="Paciente/CadastrarPaciente.jsp">Cadastrar Paciente</a>
                             <a class="dropdown-item" href="listarpacientes">Listar Todos os Pacientes</a>
-                            <a class="dropdown-item" href="ExcluirPacientePorCpf.jsp">Excluir Paciente</a>
+                            <a class="dropdown-item" href="Paciente/ExcluirPacientePorCpf.jsp">Excluir Paciente</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">

@@ -1,10 +1,8 @@
-    
 .principal{width: 100%}
 .titulo {text-align: center}
 .navbar {height: 50px;}
 .nav-item {font-size: x-large;} 
 .nav-link {font-size: x-large; padding: 10px 10px;}
-
 .login{
    background-color: powderblue;
    padding: 4px;
@@ -15,7 +13,6 @@
    margin-top:6%; 
    margin-bottom: 2%;
 }
-
 .cadastro {
     background-color: powderblue;
     padding: 4px;
@@ -26,7 +23,6 @@
     margin-top: 2%;
     margin-bottom: 1%;
 }
-
 .secao3 {     
     float: left;/*propriedade indicando que a Área flutuará a direita*/
     margin-top: 0px;
@@ -47,7 +43,5 @@
     width: 100%;/*Ocupando 74% da largura total destinada para o corpo*/
     height: 22px; 
 }
-
 .footer {width: 100%; background-color:cadetblue; text-align: center; padding: 2px; 
         margin-top: 200px; bottom: 0px ; position: fixed;}
- 

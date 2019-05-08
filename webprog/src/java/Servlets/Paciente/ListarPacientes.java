@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Servlets;
+package Servlets.Paciente;
 
-import controller.PacienteController;
+import controller.Paciente.PacienteController;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
@@ -13,7 +13,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.vo.PacienteVO;
+import model.vo.Paciente.PacienteVO;
 
 /**
  *
@@ -31,11 +31,9 @@ public class ListarPacientes extends HttpServlet {
         
         if(pacientesVO != null){
             request.setAttribute("pacientes", pacientesVO);
-            request.getRequestDispatcher("ListarTodosOsPacientes.jsp").forward(request, response);
-            //System.out.print(pacientesVO);
+            request.getRequestDispatcher("Paciente/ListarTodosOsPacientes.jsp").forward(request, response);
+            System.out.print(pacientesVO);
             }
-        
-                 
         
         }
     }

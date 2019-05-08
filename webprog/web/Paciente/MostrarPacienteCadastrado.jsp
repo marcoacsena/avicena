@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link type="text/css" rel="stylesheet" href="CRUD.css">
+        <link type="text/css" rel="stylesheet" href="../CRUD.css">
         <title>Cliente Cadastrado</title>
     </head>
     <body class="body">
@@ -17,7 +17,7 @@
         <hr>
         <h1>O Paciente foi cadastrado com os seguintes dados:</h1>
 
-        <div id="form1">
+        <div class="form1">
             <form>
 
                 <fieldset><legend>Paciente</legend>
@@ -35,7 +35,7 @@
                 <br>
                 </div>
 
-                <div id="form2">
+                <div class="form2">
 
                     <fieldset><legend>Endereço</legend>
                         <br>
@@ -45,20 +45,20 @@
                         <input type="text" size="80" value="<%= request.getAttribute("complemento")%>"><br><br>
                         Bairro:                                                          Cidade:                                                          UF: 
                         <input type="text" value="<%= request.getAttribute("bairro")%>"> <input type="text" value="<%= request.getAttribute("cidade")%>"> <select style="width:150px;" value="<%= request.getAttribute("uf")%>">
-                        CEP: 
-                        <input type="text" value="<%= request.getAttribute("cep")%>"> 
-                        <br><br>
-                    </fieldset>
-                </div>
-            </form> 
+                            CEP: 
+                            <input type="text" value="<%= request.getAttribute("cep")%>"> 
+                            <br><br>
+                            </fieldset>
+                            </div>
+                            </form> 
 
-            <form action="PaginaInicial.jsp" method="POST">
-                <input type="submit" value="Retornar para a Página Principal do SISTEMA AVICENA"><br><br>
-            </form>
+                            <form action="WEB-INF/PaginaInicial.jsp" method="POST">
+                                <input type="submit" value="Retornar para a Página Principal do SISTEMA AVICENA"><br><br>
+                            </form>
 
-            <footer class="footer">                
-                &copy; Desenvolvido por Luciane Benetti e Marco Sena.
-            </footer>
+                            <footer class="footer">                
+                                &copy; Desenvolvido por Luciane Benetti e Marco Sena.
+                            </footer>
 
-    </body>
-</html>
+                            </body>
+                            </html>

@@ -1,4 +1,4 @@
-package model.vo;
+package model.vo.Usuario;
 
 public class UsuarioVO {
     
