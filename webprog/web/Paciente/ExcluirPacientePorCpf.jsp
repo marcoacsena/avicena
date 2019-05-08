@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="../mascaras.js"></script>
-        <link type="text/css" rel="stylesheet" href="../PacienteCRUD.css">
+        <link type="text/css" rel="stylesheet" href="PacienteCRUD.css">
         <title>Excluir Paciente por CPF</title>
     </head>
     <body class="body">
