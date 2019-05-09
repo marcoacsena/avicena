@@ -24,7 +24,7 @@
                 <fieldset><legend>Digite o CPF do Paciente a ser consultado na base de dados</legend>
                     <p><a>*</a>Campos de preenchimento obrigatório</p>                    
 
-                    CPF<a>*</a>: 
+                    CPF<a>*</a>:<br> 
                     <input type="text" name="cpfpaciente" required><br><br>
 
                     <input type="submit" value = "Pesquisar Paciente">                
@@ -54,14 +54,18 @@
             <form action="atualizarpaciente" method="post">
 
                 <fieldset><legend>Dados do Paciente</legend>
-                    Nome:                        
+                    Nome: <br>                       
                     <input type="text" name="nomepaciente" value="<%= request.getAttribute("nomepaciente")%>"><br><br>            
-                    Celular: <input type="text" name="celularpaciente" onkeyup="maskIt(this, event, '(##)####-####')" value="<%= request.getAttribute("celmenpaciente")%>" required size="10"> Fone Residencial: <input type="text" name="foneresidencial" onkeyup="maskIt(this, event, '(##)####-####')" value="<%= request.getAttribute("foneresidencial")%>"size="10"> Fone Comercial: <input type="text" name="fonecomercial" onkeyup="maskIt(this, event, '(##)####-####')" value="<%= request.getAttribute("fonecomercial")%>"size="10"><br><br>
-                    e-mail: <input type="email" name="email" value="<%= request.getAttribute("email")%>" size="80"><br><br>
-                    CPF: <input type="text" name="cpfpaciente" onkeyup="maskIt(this, event, '###.###.###-##')" value="<%= request.getAttribute("cpfpaciente")%>" required > CNPJ: <input type="text" name="cnpjpaciente" onkeyup="maskIt(this, event, '##.###.###/####-##')" value="<%= request.getAttribute("cnpjpaciente")%>"><br><br>
-                    Rua: <input type="text" name="logradouro" value="<%= request.getAttribute("logradouro")%>"required size="80"> Num: <input type="text" name="numlogradouro" value="<%= request.getAttribute("numlogradouro")%>" required size="3"><br><br>
-                    Complemento: <input type="text" name="complemento" value="<%= request.getAttribute("complemento")%>" size="80"><br><br>
-                    Bairro<input type="text" name="bairro" value="<%= request.getAttribute("bairro")%>" required> Cidade: <input type="text" name="cidade" value="<%= request.getAttribute("cidade")%>" required> UF: <input type="text" name="uf" value="<%= request.getAttribute("uf")%>"required><br><br>
+                    Celular:<input type="text" name="celularpaciente" onkeyup="maskIt(this, event, '(##)####-####')" value="<%= request.getAttribute("celmenpaciente")%>" required size="10"> Fone Residencial: <input type="text" name="foneresidencial" onkeyup="maskIt(this, event, '(##)####-####')" value="<%= request.getAttribute("foneresidencial")%>"size="10"> Fone Comercial: <input type="text" name="fonecomercial" onkeyup="maskIt(this, event, '(##)####-####')" value="<%= request.getAttribute("fonecomercial")%>"size="10"><br><br>
+                    e-mail: <br>
+                    <input type="email" name="email" value="<%= request.getAttribute("email")%>" size="80"><br><br>
+                    CPF: <br>
+                    <input type="text" name="cpfpaciente" onkeyup="maskIt(this, event, '###.###.###-##')" value="<%= request.getAttribute("cpfpaciente")%>" required > CNPJ: <input type="text" name="cnpjpaciente" onkeyup="maskIt(this, event, '##.###.###/####-##')" value="<%= request.getAttribute("cnpjpaciente")%>"><br><br>
+                    Rua: <br>
+                    <input type="text" name="logradouro" value="<%= request.getAttribute("logradouro")%>"required size="80"> Num: <input type="text" name="numlogradouro" value="<%= request.getAttribute("numlogradouro")%>" required size="3"><br><br>
+                    Complemento: <br>
+                    <input type="text" name="complemento" value="<%= request.getAttribute("complemento")%>" size="80"><br><br>
+                    Bairro: <input type="text" name="bairro" value="<%= request.getAttribute("bairro")%>" required> Cidade: <input type="text" name="cidade" value="<%= request.getAttribute("cidade")%>" required> UF: <input type="text" name="uf" value="<%= request.getAttribute("uf")%>"required><br><br>
                     CEP: <input type="text" name="cep" onkeyup="maskIt(this, event, '#####-###')" value="<%= request.getAttribute("cep")%>"> 
                     <br><br> 
                     <input type="submit" value="Atualizar Dados do Paciente">

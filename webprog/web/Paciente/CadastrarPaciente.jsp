@@ -23,13 +23,15 @@
                 <fieldset><legend>Paciente</legend>                    
                     <a>*</a>Campos de preenchimento obrigatório <br><br>
                     <input type="hidden" id="cadastrar" name="cadastrar" value="cadastrar">
-                    Nome<a>*</a>:
+                    Nome<a>*</a>: <br>
                     <input type="text" name="nomepaciente" required size="60"><br><br>
-                    Celular<a>*</a>:                                                                                                                                                                                
-                    <input type="text" name="celularpaciente" required size="9" onkeyup="maskIt(this, event, '(##)####-####')"> Fone Residencial: <input type="text" name="foneresidencial" size="9" onkeyup="maskIt(this, event, '(##)####-####')"> Fone Residencial: <input type="text" name="fonecomercial" size="9" onkeyup="maskIt(this, event, '(##)####-####')"><br><br>
-                    e-mail:
+                    Celular<a>*</a>:                                                                                                                                                                              
+                    <input type="text" name="celularpaciente" required size="9" onkeyup="maskIt(this, event, '(##)####-####')"> Fone Residencial: <input type="text" name="foneresidencial" size="9" onkeyup="maskIt(this, event, '(##)####-####')"> <br>
+                    Fone Residencial:<br> 
+                    <input type="text" name="fonecomercial" size="9" onkeyup="maskIt(this, event, '(##)####-####')"><br><br>
+                    e-mail:<br>
                     <input type="email" name="email" size="60"><br><br>
-                    CPF<a>*</a>:                                                                                    
+                    CPF<a>*</a>:<br>                                                                                  
                     <input type="text" name="cpfpaciente" required onkeyup="maskIt(this, event, '###.###.###-##')"> CNPJ: <input type="text" name="cnpjpaciente" onkeyup="maskIt(this, event, '##.###.###/####-##')"><br><br>
 
                 </fieldset>
@@ -47,10 +49,14 @@
                     <input type="text" name="logradouro" required size="60">    
                     Num<a>*</a>:
                     <input type="text" name="numlogradouro" required size="3"><br><br>
-                    Complemento: <input type="text" name="complemento" size="60"><br><br>
-                    Bairro<a>*</a>: <input type="text" name="bairro" required> 
+                    Complemento: <br>
+                    <input type="text" name="complemento" size="60"><br><br>
+                    Bairro<a>*</a>: 
+                    <input type="text" name="bairro" required> 
                     Cidade<a>*</a>:                             
-                    <input type="text" name="cidade" required> UF: <select style="width:150px;" name="uf" required><option selected disabled>Selecione um estado</option>
+                    <input type="text" name="cidade" required> <br><br>
+                    UF: <br>
+                    <select style="width:150px;" name="uf" required><option selected disabled>Selecione um estado</option><br><br>
                         <option>AC</option>
                         <option>AL</option>
                         <option>AP</option>

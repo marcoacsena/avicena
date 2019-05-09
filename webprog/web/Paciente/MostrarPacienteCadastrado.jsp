@@ -22,11 +22,17 @@
 
                 <fieldset><legend>Paciente</legend>
                     <br>
-                    Identificação: <input type="text" value="<%= request.getAttribute("idpaciente")%>"><br><br>
-                    Nome: <input type="text" value="<%= request.getAttribute("nomepaciente")%>"><br><br>
-                    Celular: <input type="text" size="10" value="<%= request.getAttribute("celularpaciente")%>" onkeyup="maskIt(this, event, '(##)####-####')"> Fone Residencial: <input type="text" size="10" value="<%= request.getAttribute("foneresidencial")%>" onkeyup="maskIt(this, event, '(##)####-####')"> Fone Comercial: <input type="text" size="10" value="<%= request.getAttribute("fonecomercial")%>" onkeyup="maskIt(this, event, '(##)####-####')"><br><br>
-                    e-mail: <input type="email" size="80" value="<%= request.getAttribute("email")%>"><br><br>
-                    CPF: <input type="text" value="<%= request.getAttribute("cpfpaciente")%>" onkeyup="maskIt(this, event, '###.###.###-##')"> CNPJ: <input type="text" value="<%= request.getAttribute("cnpjpaciente")%>"><br><br>
+                    Identificação: <br>
+                    <input type="text" value="<%= request.getAttribute("idpaciente")%>"><br><br>
+                    Nome: <br>
+                    <input type="text" value="<%= request.getAttribute("nomepaciente")%>"><br><br>
+                    Celular:<input type="text" size="10" value="<%= request.getAttribute("celularpaciente")%>" onkeyup="maskIt(this, event, '(##)####-####')"> Fone Residencial:<input type="text" size="10" value="<%= request.getAttribute("foneresidencial")%>" onkeyup="maskIt(this, event, '(##)####-####')"> <br><br>
+                    Fone Comercial: <br>
+                    <input type="text" size="10" value="<%= request.getAttribute("fonecomercial")%>" onkeyup="maskIt(this, event, '(##)####-####')"><br><br>
+                    e-mail:<br>
+                    <input type="email" size="80" value="<%= request.getAttribute("email")%>"><br><br>
+                    CPF: <br>
+                    <input type="text" value="<%= request.getAttribute("cpfpaciente")%>" onkeyup="maskIt(this, event, '###.###.###-##')"> CNPJ: <input type="text" value="<%= request.getAttribute("cnpjpaciente")%>"><br><br>
 
                 </fieldset>
 

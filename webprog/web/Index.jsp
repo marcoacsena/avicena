@@ -69,9 +69,9 @@
             <fieldset><legend>Faça o login para acessar o sistema Avicena - especialidades médicas</legend><br><br>
                 <form action="usuario" method="post">                   
                     <input type="hidden" id="validar" name="validar" value="validar">
-                    Nome: 
+                    Nome: <br>
                     <input type="text" name="nome" required=""><br><br>
-                    Senha: 
+                    Senha: <br>
                     <input type="password" name="senha" required=""><br><br>
                     <input type="submit" value="OK"/>
 

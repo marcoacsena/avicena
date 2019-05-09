@@ -16,9 +16,9 @@
                 <fieldset><legend>Insira os Dados, a seguir, para cadastrar novo Usuário</legend><br><br>
                     <form action="usuario" method="post">
                         <input type="hidden" id="cadastrar" name="cadastrar" value="cadastrar">
-                        Nome: 
+                        Nome: <br>
                         <input type="text" name="nome" required=""><br><br>
-                        Senha: 
+                        Senha: <br>
                         <input type="password" name="senha" required=""><br><br>
                         <input type="submit" value="Cadastrar"><br><br>
                     </form>      

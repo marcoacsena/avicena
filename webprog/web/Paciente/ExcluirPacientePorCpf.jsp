@@ -24,7 +24,8 @@
                 <fieldset><legend>Digite o CPF do Paciente que deseja excluir da base de dados:</legend>
                     <p><a>*</a>Campos de preenchimento obrigatório</p>                    
                     <input type="hidden" id="excluir" name="excluir" value="excluir">
-                    CPF<a>*</a>: <input type="text" name="cpfpaciente" required onkeyup="maskIt(this, event, '###.###.###-##')"><br><br>
+                    CPF<a>*</a>: <br>
+                    <input type="text" name="cpfpaciente" required onkeyup="maskIt(this, event, '###.###.###-##')"><br><br>
 
                     <input type="submit" value="Excluir Paciente">                
 
