@@ -25,7 +25,7 @@
                     <p><a>*</a>Campos de preenchimento obrigatório</p>                    
 
                     CPF<a>*</a>:<br> 
-                    <input type="text" name="cpfpaciente" required><br><br>
+                    <input type="text" name="cpfpaciente" required onkeyup="maskIt(this, event, '###.###.###-##')"><br><br>
 
                     <input type="submit" value = "Pesquisar Paciente">                
 
