@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="../mascaras.js"></script>
+        <script type="text/javascript" src="mascarasPaciente.js"></script>
         <link type="text/css" rel="stylesheet" href="PacienteCRUD.css">
         <link type="text/css" rel="stylesheet" href="Paciente/PacienteCRUD.css">
         <title>Excluir Paciente por CPF</title>
@@ -35,9 +35,12 @@
             O paciente com CPF <input type="text" value="<%= request.getAttribute("cpfpaciente")%>"> 
             foi Excluído!
             <br><br>
-
-            <input type="button" value = "Retornar para a Página Principal do sistema AVICENA" onclick="history.go(-1)"><br><br>    
-
+<div>
+            <form action="../controledenavegacao" method="POST">
+                <input type="hidden" id="avicena" name="avicena" value="avicena">
+                <input type="submit" value="Voltar">
+            </form>
+        </div>
 
         </div>
 

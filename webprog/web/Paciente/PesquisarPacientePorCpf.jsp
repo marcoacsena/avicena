@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="../mascaras.js"></script>
+        <script type="text/javascript" src="mascarasPaciente.js"></script>
         <link type="text/css" rel="stylesheet" href="PacienteCRUD.css">
         <link type="text/css" rel="stylesheet" href="Paciente/PacienteCRUD.css">
         <title>Pesquisa de Pacientes por CPF</title>
@@ -26,14 +26,17 @@
 
                     CPF<a>*</a>:<br> 
                     <input type="text" name="cpfpaciente" required onkeyup="maskIt(this, event, '###.###.###-##')"><br><br>
-
                     <input type="submit" value = "Pesquisar Paciente">                
 
                 </fieldset>
             </form>
             <br><br>
-
-            <input type="button" value = "Retornar para a página principal do sistema Avicena" onclick= "history.go(-1)">
+<div>
+            <form action="../controledenavegacao" method="POST">
+                <input type="hidden" id="avicena" name="avicena" value="avicena">
+                <input type="submit" value="Voltar">
+            </form>
+        </div>
 
         </div>
 
@@ -48,32 +51,84 @@
 
                     if (!PacienteVORetornado) {%>                     
                    <input type="text" size="100" style="margin-left: 5px;" value="<% out.println("Paciente não encontrado!"
-                        + " Tente novamente. Se o Paciente não for cadastrado, por gentileza, cadastrá-lo!!");%>">               
+                               + " Tente novamente. Se o Paciente não for cadastrado, por gentileza, cadastrá-lo!!");%>">               
             <%} else {%>
 
             <form action="atualizarpaciente" method="post">
 
                 <fieldset><legend>Dados do Paciente</legend>
                     Nome: <br>                       
-                    <input type="text" name="nomepaciente" value="<%= request.getAttribute("nomepaciente")%>"><br><br>            
-                    Celular:<input type="text" name="celularpaciente" onkeyup="maskIt(this, event, '(##)####-####')" value="<%= request.getAttribute("celmenpaciente")%>" required size="10"> Fone Residencial: <input type="text" name="foneresidencial" onkeyup="maskIt(this, event, '(##)####-####')" value="<%= request.getAttribute("foneresidencial")%>"size="10"> Fone Comercial: <input type="text" name="fonecomercial" onkeyup="maskIt(this, event, '(##)####-####')" value="<%= request.getAttribute("fonecomercial")%>"size="10"><br><br>
+                    <input type="text" name="nomepaciente" size="84" value="<%= request.getAttribute("nomepaciente")%>"><br><br>            
+
+                    <div style="width:63.5%">
+                        <div style="float:left"> Celular<a>*</a>: </div>
+                        <div style="float:right"> Fone Residencial<a>*</a>: </div>
+                    </div>
+                    <br>
+                    <div style="width:80%">
+
+                        <div style="float:left"> <input type="text" name="celularpaciente" onkeyup="maskIt(this, event, '(##)####-####')" value="<%= request.getAttribute("celmenpaciente")%>" required size="31"></div>    
+                        <div style="float:right"><input type="text" name="foneresidencial" onkeyup="maskIt(this, event, '(##)####-####')" value="<%= request.getAttribute("foneresidencial")%>"size="31"></div>
+                    </div>
+                    <br><br>
+                    Fone Comercial<a>*</a>: <br>
+                    <input type="text" name="fonecomercial" onkeyup="maskIt(this, event, '(##)####-####')" value="<%= request.getAttribute("fonecomercial")%>"size="31">
+                    <br><br>
+
                     e-mail: <br>
-                    <input type="email" name="email" value="<%= request.getAttribute("email")%>" size="80"><br><br>
-                    CPF: <br>
-                    <input type="text" name="cpfpaciente" onkeyup="maskIt(this, event, '###.###.###-##')" value="<%= request.getAttribute("cpfpaciente")%>" required > CNPJ: <input type="text" name="cnpjpaciente" onkeyup="maskIt(this, event, '##.###.###/####-##')" value="<%= request.getAttribute("cnpjpaciente")%>"><br><br>
-                    Rua: <br>
-                    <input type="text" name="logradouro" value="<%= request.getAttribute("logradouro")%>"required size="80"> Num: <input type="text" name="numlogradouro" value="<%= request.getAttribute("numlogradouro")%>" required size="3"><br><br>
+                    <input type="email" name="email" value="<%= request.getAttribute("email")%>" size="84"><br><br>
+
+                    <div style="width:51%">
+                        <div style="float:left"> CPF<a>*</a>: </div>
+                        <div style="float:right"> CNPJ<a>*</a>: </div>
+                    </div>
+                    <br>
+                    <div style="width:80%">
+                        <div style="float:left">  <input type="text" name="cpfpaciente" size="35" onkeyup="maskIt(this, event, '###.###.###-##')" value="<%= request.getAttribute("cpfpaciente")%>" required ></div>    
+                        <div style="float:right"> <input type="text" name="cnpjpaciente" size="35" onkeyup="maskIt(this, event, '##.###.###/####-##')" value="<%= request.getAttribute("cnpjpaciente")%>"></div>
+                    </div>
+                    <br><br>
+
+                    <div style="width:79%">
+                        <div style="float:left"> Rua<a>*</a>: </div>
+                        <div style="float:right"> Num<a>*</a>: </div>
+                    </div>  
+                    <br>
+                    <div style="width:80%">
+                        <div style="float:left"> <input type="text" name="logradouro" value="<%= request.getAttribute("logradouro")%>"required size="70"></div>    
+                        <div style="float:right"> <input type="text" name="numlogradouro" value="<%= request.getAttribute("numlogradouro")%>" required size="3"></div>
+                    </div>  
+                    <br><br>
                     Complemento: <br>
-                    <input type="text" name="complemento" value="<%= request.getAttribute("complemento")%>" size="80"><br><br>
-                    Bairro: <input type="text" name="bairro" value="<%= request.getAttribute("bairro")%>" required> Cidade: <input type="text" name="cidade" value="<%= request.getAttribute("cidade")%>" required> UF: <input type="text" name="uf" value="<%= request.getAttribute("uf")%>"required><br><br>
-                    CEP: <input type="text" name="cep" onkeyup="maskIt(this, event, '#####-###')" value="<%= request.getAttribute("cep")%>"> 
-                    <br><br> 
+                    <input type="text" name="complemento" value="<%= request.getAttribute("complemento")%>" size="84"><br><br>
+
+                    <div style="width:52%">
+                        <div style="float:left"> Bairro<a>*</a>: </div>
+                        <div style="float:right"> Cidade<a>*</a>: </div>
+                    </div>
+                    <br>
+                    <div style="width:80%">
+                        <div style="float:left"> <input type="text" size="35" name="bairro" value="<%= request.getAttribute("bairro")%>" required></div>    
+                        <div style="float:right"> <input type="text" size="35" name="cidade" value="<%= request.getAttribute("cidade")%>" required></div>
+                    </div>                    
+                    <br><br>
+
+                    <div style="width:50%">
+                        <div style="float:left"> UF<a>*</a>: </div>
+                        <div style="float:right"> CEP<a>*</a>: </div>
+                    </div>
+                    <br>
+                    <div style="width:80%">
+                        <div style="float:left"> <input type="text" size="35" name="uf" value="<%= request.getAttribute("uf")%>"required></div>    
+                        <div style="float:right"> <input type="text" size="35" name="cep" onkeyup="maskIt(this, event, '#####-###')" value="<%= request.getAttribute("cep")%>"></div>
+                    </div>                    
+                    <br><br>
+
                     <input type="submit" value="Atualizar Dados do Paciente">
                 </fieldset>
             </form><br><br>
             <%}
-                }%>          
-
+                }%>      
         </div>            
 
         <footer class="footer">                

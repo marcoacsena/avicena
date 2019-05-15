@@ -167,7 +167,7 @@
                         </div>
                     </li>
                     <li>
-                        <form action="controledenavegacao">
+                        <form action="controledenavegacao" method="POST">
                             <input type="hidden" id="sair" name="sair" value="sair">
                             <input type="submit" value="Sair" class="sair">
                         </form>

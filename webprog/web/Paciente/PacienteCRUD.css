@@ -12,8 +12,8 @@ a{
     margin-top: 0px;/*Margen superior com 1 pixel*/
     margin-right: -1px;
     float: left;/*propriedade indicando que a Área flutuará a esquerda*/
-    width: 47%; /*Ocupando 24% da largura total destinada para o corpo*/
-    height: 700px; /*Altura de 500 pixels*/   
+    width: 48%; /*Ocupando 24% da largura total destinada para o corpo*/
+    height: 450px; /*Altura de 500 pixels*/   
 }
 .form2 {  
     background-color: lightblue; 
@@ -22,7 +22,17 @@ a{
     margin-right: -1px;
     float: right;/*propriedade indicando que a Área flutuará a esquerda*/
     width: 51.5%; /*Ocupando 24% da largura total destinada para o corpo*/
-    height: 700px; /*Altura de 500 pixels*/    
+    height: 450px; /*Altura de 500 pixels*/    
+}
+.form3{
+    background-color: lightblue; 
+    padding: 0px;
+    margin-top: 0px;/*Margen superior com 1 pixel*/
+    margin-right: -1px;
+    float: right;/*propriedade indicando que a Área flutuará a esquerda*/
+    clear: both;
+    width: 51.5%; /*Ocupando 24% da largura total destinada para o corpo*/
+    height: 10px; /*Altura de 500 pixels*/    
 }
 .consultaCPF {
     background-color: lightblue; 
@@ -30,7 +40,7 @@ a{
     margin-top: 0px;/*Margen superior com 1 pixel*/
     margin-right: 0px;
     float: left;/*propriedade indicando que a Área flutuará a esquerda*/
-    width: 29.1%; /*Ocupando 24% da largura total destinada para o corpo*/
+    width:45%; /*Ocupando 24% da largura total destinada para o corpo*/
     height: 700px; /*Altura de 500 pixels*/
 }
 .resultadodaconsultaCPF {
@@ -40,7 +50,7 @@ a{
     margin-right: 8%;
     float: right;/*propriedade indicando que a Área flutuará a direita*/
     margin-left: 1%;
-    width: 60%;/*Ocupando 74% da largura total destinada para o corpo*/
+    width: 45%;/*Ocupando 74% da largura total destinada para o corpo*/
     height: 700px;/*Altura de 494 pixels*/
 }
 .resultadodaatualizacao{

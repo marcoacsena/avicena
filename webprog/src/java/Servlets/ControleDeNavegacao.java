@@ -24,24 +24,32 @@ public class ControleDeNavegacao extends HttpServlet {
         
         String var1 = request.getParameter("sair");
         String var2 = request.getParameter("sairdocadastro");
+        String var3 = request.getParameter("avicena");
         
         ArrayList<String> variaveis = new ArrayList<>();
         variaveis.add(var1);
         variaveis.add(var2);
+        variaveis.add(var3);
         
+        System.out.println(var3);
         for (int i = 0; i < variaveis.size(); i++) {
             String variavelDeControle = variaveis.get(i);
 
             if (variavelDeControle != null) {
                 switch (variavelDeControle) {
                     case "sair":
-                        //System.out.println("A variável é: " + variaveis.get(i));
+                       
                         request.getSession().invalidate();        
                         request.getRequestDispatcher("Index.jsp").forward(request, response);
                         break;
 
                     case "sairdocadastro":
                         request.getRequestDispatcher("Index.jsp").forward(request, response);
+                        break;
+                        
+                    case "avicena":
+                       //  System.out.println("A variável é: " + variaveis.get(i));
+                        request.getRequestDispatcher("WEB-INF/PaginaInicial.jsp").forward(request, response);
                         break;
 
                     default:

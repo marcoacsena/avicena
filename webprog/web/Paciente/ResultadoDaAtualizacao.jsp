@@ -29,10 +29,15 @@
 
             <%}
                 }%>            
-
+            <div>
+                <form action="controledenavegacao" method="POST">
+                    <input type="hidden" id="avicena" name="avicena" value="avicena">
+                    <input type="submit" value="Voltar">
+                </form>
+            </div>
         </div>
         <br><br>
-        <input type="button" value = "Retornar para a página de Pesquisa" onclick= "history.go(-1)">
+
         <footer class="footer">                
             &copy; Desenvolvido por Luciane Benetti e Marco Sena.
         </footer>        

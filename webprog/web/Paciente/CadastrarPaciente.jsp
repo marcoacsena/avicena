@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="../mascaras.js"></script>
+        <script type="text/javascript" src="mascarasPaciente.js"></script>
         <link type="text/css" rel="stylesheet" href="PacienteCRUD.css">
         <link type="text/css" rel="stylesheet" href="Paciente/PacienteCRUD.css">
         <title>Cadastrar Paciente</title>
@@ -24,20 +24,41 @@
                     <a>*</a>Campos de preenchimento obrigatório <br><br>
                     <input type="hidden" id="cadastrar" name="cadastrar" value="cadastrar">
                     Nome<a>*</a>: <br>
-                    <input type="text" name="nomepaciente" required size="74"><br><br>
-                    Celular<a>*</a>:                                                                                                                                                                              
-                    <input type="text" name="celularpaciente" required size="9" onkeyup="maskIt(this, event, '(##)####-####')"> Fone Residencial: <input type="text" name="foneresidencial" size="9" onkeyup="maskIt(this, event, '(##)####-####')"> <br>
-                    Fone Residencial:<br> 
-                    <input type="text" name="fonecomercial" size="9" onkeyup="maskIt(this, event, '(##)####-####')"><br><br>
+                    <input type="text" name="nomepaciente" required size="81"><br><br>
+
+                    <div style="width:74%">
+                        <div style="float:left"> Celular<a>*</a>: </div>
+                        <div style="float:right"> Fone Residencial<a>*</a>: </div>
+                    </div>
+                    <br>
+                    <div style="width:100%">
+
+                        <div style="float:left"> <input type="text" name="celularpaciente" required size="35" onkeyup="maskIt(this, event, '(##)####-####')"></div>    
+                        <div style="float:right"> <input type="text" name="foneresidencial" size="35" onkeyup="maskIt(this, event, '(##)####-####')"></div>
+                    </div>
+                    <br><br>
+                    Fone Comercial<a>*</a>: <br>
+                    <input type="text" name="fonecomercial" size="35" onkeyup="maskIt(this, event, '(##)####-####')">
+                    <br><br>
+                    
                     e-mail:<br>
-                    <input type="email" name="email" size="74"><br><br>
-                    <div> CPF<a>*</a>:<br> </div>                                                                                 <div> CNPJ: </div>
-                    <div>  <input type="text" name="cpfpaciente" size="31" required onkeyup="maskIt(this, event, '###.###.###-##')"> </div> <div> <input type="text" name="cnpjpaciente" size="31" onkeyup="maskIt(this, event, '##.###.###/####-##')"></div><br><br>
+                    <input type="email" name="email" size="81">
+                    <br><br>
+                    <div style="width:62%">
+                        <div style="float:left"> CPF<a>*</a>: </div>
+                        <div style="float:right"> CNPJ<a>*</a>: </div>
+                    </div>
+                    <br>
+                    <div style="width:100%">
+                        <div style="float:left"> <input type="text" name="cpfpaciente" size="35" required onkeyup="maskIt(this, event, '###.###.###-##')"></div>    
+                        <div style="float:right"> <input type="text" name="cnpjpaciente" size="35" onkeyup="maskIt(this, event, '##.###.###/####-##')"></div>
+                    </div>
+                    <br><br>
 
                 </fieldset>
 
                 <br><br>
-                <input type="button" value = "Retornar para a Página Principal do sistema Avicena" onclick="history.go(-1)">
+
                 <br>
             </div>
 
@@ -57,10 +78,19 @@
                     <br><br>
                     Complemento: <br>
                     <input type="text" name="complemento" size="90"><br><br>
-                    Bairro<a>*</a>: <br>
-                    <input type="text" name="bairro" required> 
-                    Cidade<a>*</a>: <br>                            
-                    <input type="text" name="cidade" required> <br><br>
+
+                    <div style="width:62%">
+                        <div style="float:left"> Bairro<a>*</a>: </div>
+                        <div style="float:right"> Cidade<a>*</a>: </div>
+                    </div>
+                    <br>
+                    <div style="width:100%">
+                        <div style="float:left"> <input type="text" name="bairro" size="40" required></div>    
+                        <div style="float:right"> <input type="text" name="cidade" size="40" required></div>
+                    </div>                    
+
+                    <br><br>
+
                     UF: <br>
                     <select style="width:150px;" name="uf" required><option selected disabled>Selecione um estado</option><br><br>
                         <option>AC</option>
@@ -100,7 +130,12 @@
                 </fieldset>
             </div>
         </form>
-
+        <div>
+            <form action="../controledenavegacao" method="POST">
+                <input type="hidden" id="avicena" name="avicena" value="avicena">
+                <input type="submit" value="Voltar">
+            </form>
+        </div>
         <footer class="footer">                
             &copy; Desenvolvido por Luciane Benetti e Marco Sena.
         </footer>    

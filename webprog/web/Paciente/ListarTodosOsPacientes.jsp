@@ -63,7 +63,12 @@
             %>
         </table>      
 
-        <input type="button" value = "Retornar para a Página Principal do sistema AVICENA" onclick="history.go(-1)"><br><br>    
+       <div>
+            <form action="controledenavegacao" method="POST">
+                <input type="hidden" id="avicena" name="avicena" value="avicena">
+                <input type="submit" value="Voltar">
+            </form>
+        </div>  
 
         <footer class="footer">                
             &copy; Desenvolvido por Luciane Benetti e Marco Sena.

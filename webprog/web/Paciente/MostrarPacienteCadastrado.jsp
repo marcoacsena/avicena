@@ -37,9 +37,10 @@
                 </fieldset>
 
                 <br><br>
-                <input type="button" value = "Retornar para a Página Principal do SISTEMA AVICENA" onclick="history.go(-2)">
+
                 <br>
                 </div>
+
 
                 <div class="form2">
 
@@ -57,7 +58,12 @@
                             </fieldset>
                             </div>
                             </form> 
-
+                            <div>
+                                <form action="controledenavegacao" method="POST">
+                                    <input type="hidden" id="avicena" name="avicena" value="avicena">
+                                    <input type="submit" value="Voltar">
+                                </form>
+                            </div>
                             <footer class="footer">                
                                 &copy; Desenvolvido por Luciane Benetti e Marco Sena.
                             </footer>
