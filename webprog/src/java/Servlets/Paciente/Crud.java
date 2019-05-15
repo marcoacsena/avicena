@@ -96,7 +96,7 @@ public class Crud extends HttpServlet {
                         if (pacienteController.excluirPacientePorCpf(pacienteVO.getCpfPaciente())) {
 
                             request.setAttribute("cpfpaciente", pacienteVO.getCpfPaciente());
-                            request.getRequestDispatcher("Paciente/ExcluirPacientePorCpf.jsp").forward(request, response);
+                            request.getRequestDispatcher("Paciente/MostrarPacienteExcluido.jsp").forward(request, response);
                         }
 
                         break;

@@ -9,7 +9,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link type="text/css" rel="stylesheet" href="Paciente/PacienteCRUD.css">
+        <link type="text/css" rel="stylesheet" href="Paciente/CRUDPaciente.css">
         <title>Resultado da Atualização</title>
     </head>
     <body class="body">        
@@ -30,6 +30,7 @@
             <%}
                 }%>            
             <div>
+                <br><br>
                 <form action="controledenavegacao" method="POST">
                     <input type="hidden" id="avicena" name="avicena" value="avicena">
                     <input type="submit" value="Voltar">

@@ -10,8 +10,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="mascarasPaciente.js"></script>
-        <link type="text/css" rel="stylesheet" href="PacienteCRUD.css">
-        <link type="text/css" rel="stylesheet" href="Paciente/PacienteCRUD.css">
+        <link type="text/css" rel="stylesheet" href="CRUDPaciente.css">
+        <link type="text/css" rel="stylesheet" href="Paciente/CRUDPaciente.css">
         <title>Cadastrar Paciente</title>
     </head>
     <body class="body">
@@ -24,11 +24,11 @@
                     <a>*</a>Campos de preenchimento obrigatório <br><br>
                     <input type="hidden" id="cadastrar" name="cadastrar" value="cadastrar">
                     Nome<a>*</a>: <br>
-                    <input type="text" name="nomepaciente" required size="81"><br><br>
+                    <input type="text" name="nomepaciente" required size="83"><br><br>
 
                     <div style="width:74%">
                         <div style="float:left"> Celular<a>*</a>: </div>
-                        <div style="float:right"> Fone Residencial<a>*</a>: </div>
+                        <div style="float:right"> Fone Residencial: </div>
                     </div>
                     <br>
                     <div style="width:100%">
@@ -37,16 +37,16 @@
                         <div style="float:right"> <input type="text" name="foneresidencial" size="35" onkeyup="maskIt(this, event, '(##)####-####')"></div>
                     </div>
                     <br><br>
-                    Fone Comercial<a>*</a>: <br>
+                    Fone Comercial: <br>
                     <input type="text" name="fonecomercial" size="35" onkeyup="maskIt(this, event, '(##)####-####')">
                     <br><br>
                     
                     e-mail:<br>
-                    <input type="email" name="email" size="81">
+                    <input type="email" name="email" size="83">
                     <br><br>
                     <div style="width:62%">
                         <div style="float:left"> CPF<a>*</a>: </div>
-                        <div style="float:right"> CNPJ<a>*</a>: </div>
+                        <div style="float:right"> CNPJ: </div>
                     </div>
                     <br>
                     <div style="width:100%">
@@ -91,7 +91,7 @@
 
                     <br><br>
 
-                    UF: <br>
+                    UF<a>*</a>: <br>
                     <select style="width:150px;" name="uf" required><option selected disabled>Selecione um estado</option><br><br>
                         <option>AC</option>
                         <option>AL</option>
@@ -130,12 +130,11 @@
                 </fieldset>
             </div>
         </form>
-        <div>
-            <form action="../controledenavegacao" method="POST">
-                <input type="hidden" id="avicena" name="avicena" value="avicena">
-                <input type="submit" value="Voltar">
-            </form>
-        </div>
+        <div class="form3">
+               <form action="../controledenavegacao" method="post">
+                    <input type="hidden" id="avicena" name="avicena" value="avicena">
+                    <input type="submit" value = "Voltar">
+               </form>   
         <footer class="footer">                
             &copy; Desenvolvido por Luciane Benetti e Marco Sena.
         </footer>    

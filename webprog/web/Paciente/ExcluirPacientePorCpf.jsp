@@ -10,8 +10,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="mascarasPaciente.js"></script>
-        <link type="text/css" rel="stylesheet" href="PacienteCRUD.css">
-        <link type="text/css" rel="stylesheet" href="Paciente/PacienteCRUD.css">
+        <link type="text/css" rel="stylesheet" href="CRUDPaciente.css">
+        <link type="text/css" rel="stylesheet" href="Paciente/CRUDPaciente.css">
         <title>Excluir Paciente por CPF</title>
     </head>
     <body class="body">
@@ -30,17 +30,15 @@
                     <input type="submit" value="Excluir Paciente">                
 
                 </fieldset>                
-            </form> <br><br>
-
-            O paciente com CPF <input type="text" value="<%= request.getAttribute("cpfpaciente")%>"> 
-            foi Excluído!
+            </form> 
             <br><br>
-<div>
-            <form action="../controledenavegacao" method="POST">
-                <input type="hidden" id="avicena" name="avicena" value="avicena">
-                <input type="submit" value="Voltar">
-            </form>
-        </div>
+          
+            <div>
+                <form action="../controledenavegacao" method="POST">
+                    <input type="hidden" id="avicena" name="avicena" value="avicena">
+                    <input type="submit" value="Voltar">
+                </form>
+            </div>
 
         </div>
 
