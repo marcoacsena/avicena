@@ -166,10 +166,11 @@
                            
                         </div>
                     </li>
-                    <li class="sair">
-                        <a href="sairdosistema">
-                            Sair
-                        </a>
+                    <li>
+                        <form action="controledenavegacao">
+                            <input type="hidden" id="sair" name="sair" value="sair">
+                            <input type="submit" value="Sair" class="sair">
+                        </form>
                         
                     </li>
                 </ul>

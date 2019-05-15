@@ -21,8 +21,8 @@
         <servlet-class>Servlets.Usuario.Usuario</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>SairdoSistema</servlet-name>
-        <servlet-class>Servlets.SairdoSistema</servlet-class>
+        <servlet-name>ControleDeNavegacao</servlet-name>
+        <servlet-class>Servlets.ControleDeNavegacao</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ListarMedicos</servlet-name>
@@ -49,8 +49,8 @@
         <url-pattern>/usuario</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>SairdoSistema</servlet-name>
-        <url-pattern>/sairdosistema</url-pattern>
+        <servlet-name>ControleDeNavegacao</servlet-name>
+        <url-pattern>/controledenavegacao</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>Index.jsp</welcome-file>

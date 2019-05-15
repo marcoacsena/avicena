@@ -4,8 +4,11 @@
 .nav-item {font-size: large;} 
 .nav-link {font-size: large; padding: 10px 10px;}
 .sair {
+    background-color: cadetblue;
     color: white;
-    padding: 10px;
+    border-style: none;
+    padding: 5px;
+    margin-top: 8%;
     text-align: center;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;

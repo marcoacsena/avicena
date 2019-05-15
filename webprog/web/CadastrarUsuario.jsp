@@ -22,8 +22,9 @@
                         <input type="password" name="senha" size=60 required=""><br><br>
                         <input type="submit" value="Cadastrar"><br><br>
                     </form>      
-                    <form action="sairdosistema" method="post">
-                        <input type="submit" value = "sair">
+                    <form action="controledenavegacao" method="post">
+                        <input type="hidden" id="sairdocadastro" name="sairdocadastro" value="sairdocadastro">
+                        <input type="submit" value = "Voltar">
                     </form> 
                 </fieldset>
 
@@ -38,7 +39,9 @@
 
                     if (!usuariocadastrado) {%>
 
-            <input type="text" size="100" value="<% out.println("Não foi possível cadastrar o novo Usuário, pois já existe um cadastro com esse nome. Tente novamente!");%>">
+                        <input type="text" size="125" style="margin-left: 310px;" value="<% out.println("Não "
+                                + "foi possível cadastrar o novo Usuário, pois já existe um cadastro com esse nome. Forneça outro nome, diferente do primeiro digitado!");%>">
+                               
 
             <%}
                 }
