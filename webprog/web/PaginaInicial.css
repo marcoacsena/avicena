@@ -4,22 +4,23 @@
 .nav-item {font-size: large;} 
 .nav-link {font-size: large; padding: 10px 10px;}
 .sair {
-  color: white;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 .login{
-   background-color: powderblue;
-   padding: 4px;
-   float: right;
-   width: 60%;
-   margin-right: 20%;
-   margin-left: 10%;
-   margin-top:6%; 
-   margin-bottom: 2%;
- }
+    background-color: powderblue;
+    padding: 4px;
+    float: right;
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 10%;
+    margin-top:6%; 
+    margin-bottom: 2%;
+    
+}
 .cadastro {
     background-color: powderblue;
     padding: 4px;
@@ -51,4 +52,4 @@
     height: 22px; 
 }
 .footer {width: 100%; background-color:cadetblue; text-align: center; padding: 2px; 
-        margin-top: 200px; bottom: 0px ; position: fixed;}
+         margin-top: 200px; bottom: 0px ; position: fixed;}

@@ -70,9 +70,9 @@
                 <form action="usuario" method="post">                   
                     <input type="hidden" id="validar" name="validar" value="validar">
                     Nome: <br>
-                    <input type="text" name="nome" required=""><br><br>
+                    <input type="text" name="nome" size=70 required=""><br><br>
                     Senha: <br>
-                    <input type="password" name="senha" required=""><br><br>
+                    <input type="password" size=70 name="senha" required=""><br><br>
                     <input type="submit" value="OK"/>
 
                 </form><br> 

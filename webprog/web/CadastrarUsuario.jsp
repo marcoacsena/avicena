@@ -17,9 +17,9 @@
                     <form action="usuario" method="post">
                         <input type="hidden" id="cadastrar" name="cadastrar" value="cadastrar">
                         Nome: <br>
-                        <input type="text" name="nome" required=""><br><br>
+                        <input type="text" name="nome" size=60 required=""><br><br>
                         Senha: <br>
-                        <input type="password" name="senha" required=""><br><br>
+                        <input type="password" name="senha" size=60 required=""><br><br>
                         <input type="submit" value="Cadastrar"><br><br>
                     </form>      
                     <form action="sairdosistema" method="post">

@@ -24,15 +24,15 @@
                     <a>*</a>Campos de preenchimento obrigatório <br><br>
                     <input type="hidden" id="cadastrar" name="cadastrar" value="cadastrar">
                     Nome<a>*</a>: <br>
-                    <input type="text" name="nomepaciente" required size="60"><br><br>
+                    <input type="text" name="nomepaciente" required size="74"><br><br>
                     Celular<a>*</a>:                                                                                                                                                                              
                     <input type="text" name="celularpaciente" required size="9" onkeyup="maskIt(this, event, '(##)####-####')"> Fone Residencial: <input type="text" name="foneresidencial" size="9" onkeyup="maskIt(this, event, '(##)####-####')"> <br>
                     Fone Residencial:<br> 
                     <input type="text" name="fonecomercial" size="9" onkeyup="maskIt(this, event, '(##)####-####')"><br><br>
                     e-mail:<br>
-                    <input type="email" name="email" size="60"><br><br>
-                    CPF<a>*</a>:<br>                                                                                  
-                    <input type="text" name="cpfpaciente" required onkeyup="maskIt(this, event, '###.###.###-##')"> CNPJ: <input type="text" name="cnpjpaciente" onkeyup="maskIt(this, event, '##.###.###/####-##')"><br><br>
+                    <input type="email" name="email" size="74"><br><br>
+                    <div> CPF<a>*</a>:<br> </div>                                                                                 <div> CNPJ: </div>
+                    <div>  <input type="text" name="cpfpaciente" size="31" required onkeyup="maskIt(this, event, '###.###.###-##')"> </div> <div> <input type="text" name="cnpjpaciente" size="31" onkeyup="maskIt(this, event, '##.###.###/####-##')"></div><br><br>
 
                 </fieldset>
 
@@ -45,15 +45,21 @@
 
                 <fieldset><legend>Endereço</legend>
                     <br>
-                    Rua<a>*</a>:                                                
-                    <input type="text" name="logradouro" required size="60">    
-                    Num<a>*</a>:
-                    <input type="text" name="numlogradouro" required size="3"><br><br>
+                    <div style="width:100%">
+                        <div style="float:left"> Rua<a>*</a>: </div>
+                        <div style="float:right"> Num<a>*</a>: </div>
+                    </div>  
+                    <br>
+                    <div style="width:100%">
+                        <div style="float:left"> <input type="text" name="logradouro" required size="80"></div>    
+                        <div style="float:right"> <input type="text" name="numlogradouro" required size="3"></div>
+                    </div>  
+                    <br><br>
                     Complemento: <br>
-                    <input type="text" name="complemento" size="60"><br><br>
-                    Bairro<a>*</a>: 
+                    <input type="text" name="complemento" size="90"><br><br>
+                    Bairro<a>*</a>: <br>
                     <input type="text" name="bairro" required> 
-                    Cidade<a>*</a>:                             
+                    Cidade<a>*</a>: <br>                            
                     <input type="text" name="cidade" required> <br><br>
                     UF: <br>
                     <select style="width:150px;" name="uf" required><option selected disabled>Selecione um estado</option><br><br>
@@ -85,7 +91,7 @@
                         <option>SP</option>
                         <option>TO</option>                                                 
                     </select><br><br>
-                    CEP:
+                    CEP:<br>
                     <input type="text" name="cep" onkeyup="maskIt(this, event, '#####-###')"> 
                     <br><br>                        
 
